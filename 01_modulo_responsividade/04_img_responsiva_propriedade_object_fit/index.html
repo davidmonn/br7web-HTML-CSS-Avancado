@@ -10,12 +10,71 @@
 
     <div id="main">
 
-        <a href="../">Aula anterior - </a>
+        <a href="../03_imagens_responsiva_picture_source/index.html">Aula anterior - Imagens Responsivas picture e source</a>
 
         <h1 id="title">Imagens Responsivas: Propriedade Object-fit</h1>
+        <p>
+            Aqui veremos uma otima propriedade do <strong>CSS</strong>, para tratar sobre adaptabilidade de uma imagem, apos escolhermos uma imagem, podemos ir em nosso <strong>CSS</strong> e fazer as seguntes config:
+        </p>
+        <p>
+            <strong>CSS:</strong>
+        </p>
+        <p>
+            <strong>img { </strong> <br>
+                width:400px; <br>
+                height:400px; <br>
+                object-fit: none, fill, cover, contain ou scale-down; <br>
+                <strong>}</strong>
+        </p>
+
+        <h3>Alguns valores do <strong>object-fit:</strong></h3>
+        <ul>
+            <li>
+                <strong>fill (padrao:)</strong> Preenche todo o container, podendo distorcer a imagem para caber.
+            </li>
+            <li>
+                <strong>contain:</strong> Ajusta o conteúdo inteiro dentro do container, preservando as proporções. Pode deixar espaços vazios (letterbox).
+            </li>
+            <li>
+                <strong>cover:</strong> Cobre todo o container preservando as proporções. Pode cortar partes da imagem para preencher totalmente.
+            </li>
+            <li>
+                <strong>scale-down:</strong> Mostra o menor entre none e contain (ou seja, se a imagem já for menor que o container, não escala; se for maior, reduz para caber).
+            </li>
+            <li>
+                <strong>none:</strong> Não redimensiona. Mostra o conteúdo em seu tamanho original, podendo vazar para fora do container.
+            </li>
+        </ul>
+
+        <h3>Alguns exemplos na pratica:</h3>
+
+        <h3>none:</h3>
+        <picture>
+            <img class="teste1" src="img/paisagem-teste.jpg" alt="Paisagem">
+        </picture>
+
+        <h3>fill:</h3>
+        <picture>
+            <img class="teste2" src="img/paisagem-teste.jpg" alt="Paisagem">
+        </picture>
+
+        <h3>cover:</h3>
+        <picture>
+            <img class="teste3" src="img/paisagem-teste.jpg" alt="Paisagem">
+        </picture>
+        
+        <h3>contain</h3>
+        <picture>
+            <img class="teste4" src="img/paisagem-teste.jpg" alt="Paisagem">
+        </picture>
+        
+        <h3>scale-down</h3>
+        <picture>
+            <img class="teste5" src="img/paisagem-teste.jpg" alt="Paisagem">
+        </picture>
         
        
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../05_css_@media_(1-2)/index.html" id="next">Proxima aula - CSS @media: como funciona (1/2)</a>
 
     </div>
     
