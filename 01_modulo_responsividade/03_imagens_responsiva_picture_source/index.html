@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Responsivas: picture e source</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+
+    <div id="main">
+
+        <a href="../02_layout_adapt_vs_responsivo/index.html">Aula anterior - Layout Adaptativo vs Responsivo</a>
+
+        <h1 id="title">Imagens Responsivas: picture e source</h1>
+
+            <h3>Anotação sobre picture, source e img:</h3>
+            <p>
+                Com a tag picture, podemos agrupar várias imagens para exibir a imagem mais adequada dependendo do tamanho da tela ou tipo de dispositivo.
+            </p>
+            <p>
+                A tag img dentro do picture funciona como uma imagem padrão (fallback). Ela será mostrada caso nenhuma das outras opções seja usada.
+            </p>
+            <h3>
+                Podemos ter, por exemplo, 3 imagens diferentes:
+            </h3>
+            <ul>
+                <li>Uma para celular (pequena)</li>
+                <li>Uma para tablet (média)</li>
+                <li>Uma para PC (grande)</li>
+            </ul>
+
+            <p>
+                Para definir qual imagem será exibida em cada situação, usamos as tags <source> com suas propriedades (principalmente o atributo media).
+            </p>
+            <p>
+                O navegador escolhe automaticamente a melhor imagem para exibir, de acordo com as condições definidas (ex: largura da tela).
+            </p>
+            <h3>
+                Assim, conseguimos fazer uma responsividade de imagens:
+            </h3>
+            <ul>
+                <li>Melhorando a velocidade de carregamento</li>
+                <li>Garantindo uma boa aparência em diferentes dispositivos</li>
+            </ul>
+        
+        <picture>
+            <source media="(min-width:650px)" srcset="imgs/teste2.jpg" alt="roxo">
+            <source media="(min-width:450px)" srcset="imgs/teste3.jpg" alt="vermelho">
+            <img src="imgs/teste1.jpg" alt="Teste Azul">
+        </picture>
+
+       
+    <a href="../04_img_responsiva_propriedade_object_fit/index.html" id="next">Proxima aula - Imagem Responsiva propriedade object-fit</a>
+
+    </div>
+    
+</body>
+</html>
