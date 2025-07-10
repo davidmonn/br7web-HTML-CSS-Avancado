@@ -1,6 +1,7 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* Reset e Body */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,6 +11,7 @@ body {
     margin: 20px auto;
 }
 
+/* Estilo principal do #main */
 #main {
     background-color: aqua;
     margin: 20px auto;
@@ -17,13 +19,7 @@ body {
     border-radius: 10px;
 }
 
-#comentarios {
-    background-color: rgba(255, 255, 255, 0.788);
-    margin: 100px 0;
-    padding: 25px;
-    border-radius: 5%;
-}
-
+/* Texto padrão */
 title,
 h1,
 h2,
@@ -31,10 +27,6 @@ h3 {
     text-align: center;
     color: rgba(0, 0, 255, 0.521);
     margin: 30px auto;
-}
-
-h3 {
-    text-align: justify;
 }
 
 h1 {
@@ -47,8 +39,8 @@ h2 {
 
 h3 {
     font-size: 30px;
+    text-align: justify;
 }
-
 
 p {
     font-size: 18px;
@@ -59,7 +51,7 @@ p {
 ul {
     margin-top: 0px;
     margin-bottom: 25px;
-    padding-left: 25px
+    padding-left: 25px;
 }
 
 ul li {
@@ -67,7 +59,6 @@ ul li {
 }
 
 #next {
-    /* margin: 0px 250px; */
     display: block;
     text-align: right;
 }
@@ -76,85 +67,11 @@ ul li {
     color: red;
 }
 
-label {
-    display: block;
-    margin: 20px auto;
-}
-
-input[type=text],[type=email],[type=password], textarea, select{
-    display: block;
-    padding: 5px;
-    width: 350px;
-    font-size: 15px;
-    border: 1px solid #CCC;
-    outline: 0;
-    margin: 5px;
-}
-
-textarea {
-    height: 150px;
-    resize: none;
-}
-
-.termoslink {
-    color: #000;
-    text-decoration: none;
-}
-
-.termoslink:hover{
-    text-decoration: underline;
-}
-
-[type=submit] {
-    background-color: #EEE;
-    padding: 5px;
-    font-size: 15px;
-    border: 2px solid #CCC;
-}
-
-[type=submit]:hover {
-    background-color:rgba(0, 0, 255, 0.091);
-    transition: 0.5s;
-    border: 2px solid rgba(0, 0, 255, 0.091);
-}
-
-#cont-form {
-    background-color: #cccccc9e;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-fieldset {
-    background-color: #eeeeeea1;
-    margin: 25px 0px;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 255, 0.521);
-    border-radius: 15px;
-}
-
-legend {
-    color: rgba(0, 0, 255, 0.521);
-    font-weight: bold;
-    padding: 5px;
-}
-
-.boxPai {
-    font-size: 20px;
-}
-
-.boxPai h1 {
-    font-size: inherit;
-}
-
-li {
-    margin-bottom: 15px 0px;
-}
-
-
+/*IMG*/
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 /* Responsividade */
@@ -211,5 +128,24 @@ img {
 
     #main {
         background-color: aqua;
+    }
+}
+
+/*Impressao*/
+@media print {
+    h1 {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 15px;
     }
 }

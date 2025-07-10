@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS @media: como funciona (2/2)</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+
+    <div id="main">
+
+        <a href="../">Aula anterior - </a>
+
+        <h1 id="title">CSS @media: como funciona (2/2)</h1>
+
+        <p>
+            Aqui veremos uma das coisas que mais serao usadas, pois com ela podemos fazer layouts com responsividade
+        </p>
+
+        <h3>Como funciona:</h3>
+        <ul>
+            <li>
+                Você define uma condição (ex: largura da tela).
+            </li>
+            <li>
+                Dentro dessa condição, você escreve o CSS que quer aplicar somente quando essa condição for verdadeira.
+            </li>
+        </ul>
+
+        <h3>Continuacao da aula anterior</h3>
+        
+        <p>
+            Com o @media, podemos tambem controlar o tipo de media que esta aparecendo, ex: na parte de impressao, podemos colocar uma propriedade onde quando o usuario for fazer a impressao, ira remover ou adicionar algo da impressao.
+        </p>
+
+        <p>
+            Para fazermos isso podemos fazer da seguinte forma:
+        </p>
+        <p>
+            CSS: <br>
+            <strong>@media only print</strong> e nele adicionamos as propriedades como:
+        </p>
+        <p>
+            <strong>
+                @media only print { <br>
+                    
+                    h1 {<br>
+                        font-size: 40px; <br>
+                        font-weight: bold; <br>                     
+                    } <br> <br> <br>
+
+                    p { <br>
+                        font-size: 18px; <br>
+                    } <br> <br>
+
+                }
+            </strong>
+        </p>
+
+        <h3>Ex CSS:</h3>
+        <picture>
+            <img src="img/Captura de tela 2025-07-10 014436.png" alt="Ex @media impressao">
+        </picture>
+
+        <p>
+            Se quisermos por exemplo remover o <strong>h1</strong> podemos usar a a propriedade selecionando nosso <strong>h1</strong> e usar <strong>display:none;</strong>
+        </p>
+
+        <p>
+            <strong>Obs:</strong> se no caso o codigo nao funcionar, usar apenas o <strong>@media print</strong>.
+        </p>
+
+        
+       
+    <a href="../" id="next">Proxima aula - </a>
+
+    </div>
+    
+</body>
+</html>
