@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation no @media</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+
+    <div id="main">
+
+        <a href="../">Aula anterior - </a>
+
+        <h1 id="title">Orientation no @media</h1>
+        <p>
+            Aqui iremos ver o <strong>@media orientation</strong>, que serve basicamente para detectar se a tela esta mais para a horizontal ou mais para vertical.
+        </p>
+        <p>
+            Abaixo as caixas de teste iram em determinadas condicoes ficar uma ao lado da outra, e em outra situacao ficar uma abaixo da outra. Isso e bom pois quando estamos por exemplo em um celular e ao virar ele para a horizontal, sobrara mais espaco lateral sendo assim, os quadrados podem ficar um ao lado do outro.
+        </p>
+
+        <p>
+            <strong>Obs:</strong> Para usar display: flex com @media (orientation: landscape) ou portrait, é necessário ter um container pai com display: flex e os itens filhos dentro dele. O flex-direction aplicado no container é o que controla se os filhos ficam lado a lado (row) ou empilhados (column).
+        </p>
+
+        <h3>
+            <strong>Informacoes adionais:</strong> 
+        </h3>
+        <ul>
+            <li>
+                O flex-direction só afeta os filhos diretos do elemento com display: flex.
+            </li>
+            <li>
+                As caixas precisam estar dentro de um elemento pai (container) que seja flex para poderem mudar de linha para coluna.
+            </li>
+        </ul>
+
+        <h3>Exemplos abaixo:</h3>
+
+        <div id="cont-pai">
+            <div id="caixa1"></div>
+            <div id="caixa2"></div>
+            <div id="caixa3"></div>
+            <div id="caixa4"></div>
+        </div>
+       
+        <p>
+            O <strong>orientation</strong> do <strong>@media</strong> nao detecta a posicao real do celular, ele nao ira detectar a posicao que esta o celular, ele trabalha com proporcao de tela, ou seja, ele pega os tamanhos de tela disponiveis e verifica quem ta maior a horizontal ou vertical. Ou seja, no celular por exemplo em uma parte que abra a parte de digitacao, pode tambem acabar mudando o tipo de tela de vertical para horizontal.
+        </p>
+
+        
+    <a href="../" id="next">Proxima aula - </a>
+
+    </div>
+
+    
+</body>
+</html>
