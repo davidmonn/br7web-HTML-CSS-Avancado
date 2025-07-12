@@ -4,14 +4,21 @@
     box-sizing: border-box;
 }
 
+/*Var*/
+:root {
+    --bd-color: rgba(0, 0, 255, 0.388);
+    --main-color: aqua;
+    --h-color: rgba(0, 0, 255, 0.521);
+}
+
 body {
-    background-color: rgba(0, 0, 255, 0.388);
+    background-color: var(--bd-color);
     max-width: 750px;
     margin: 20px auto;
 }
 
 #main {
-    background-color: aqua;
+    background-color: var(--main-color);
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
@@ -29,7 +36,7 @@ h1,
 h2,
 h3 {
     text-align: center;
-    color: rgba(0, 0, 255, 0.521);
+    color: var(--h-color);
     margin: 30px auto;
 }
 
