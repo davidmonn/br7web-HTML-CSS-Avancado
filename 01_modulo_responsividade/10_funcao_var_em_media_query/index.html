@@ -10,12 +10,19 @@
 
     <div id="main">
 
-        <a href="../">Aula anterior - </a>
+        <a href="../09_funcao_var/index.html">Aula anterior - Funcao var</a>
 
         <h1 id="title">Funcao var em media query</h1>
-        
+        <p>
+            Podemos usar <strong>var</strong>, em <strong>media query</strong>, para podermos ter responsividade com a <strong>variavel</strong>, mas muitos cometem um erro muito frequente, onde criam uma <strong>variavel</strong> para ex um font-size padrao e na hora de fazer o <strong>media query</strong>, nao usa uma <strong>variavel</strong>. Ou melhor doque isso, podemos simplesmente criar uma <strong>var</strong> com <strong>escopo local</strong>, para ser usado apenas nessa parte de <strong>media query</strong>.
+        </p>
 
-    <a href="../" id="next">Proxima aula - </a>
+        <h3>Vantagem:</h3>
+        <p>
+            Esse padrão melhora a manutenção do código: se você quiser ajustar o tamanho da fonte para telas grandes, só precisa mudar um único valor local, e todos os elementos que usam var(--font-size-padrao) vão se adaptar.
+        </p>
+
+    <a href="../11_hack_css_altura_relativa_a_largura/index.html" id="next">Proxima aula - Hack CSS - Altura Relativa a Largura.</a>
 
     </div>
 

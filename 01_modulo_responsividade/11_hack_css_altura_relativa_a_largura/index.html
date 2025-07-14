@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack CSS - Altura Relativa a Largura</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+
+    <div id="main">
+
+        <a href="../">Aula anterior - </a>
+
+        <h1 id="title">Hack CSS - Altura Relativa a Largura</h1>
+        <p>
+            Quando adicionamos um vídeo ao nosso site, por exemplo do YouTube, ele não é responsivo por padrão. Isso significa que, ao diminuir o tamanho da tela (como em celulares), o vídeo pode ficar cortado ou desproporcional.
+        </p>
+        <p>
+            Para resolver isso, podemos aplicar um hack de CSS que permite manter a proporção do vídeo (como 16:9), ajustando automaticamente a altura com base na largura da tela.
+        </p>
+        <h3>Para isso, usamos dois containers:</h3>
+        <ul>
+            <li>
+                O primeiro é o container externo, que define a proporção com um padding-top.
+            </li>
+            <li>
+                O segundo é uma div interna que conterá o vídeo (iframe) e ficará posicionada absolutamente dentro do container externo.
+            </li>
+        </ul>
+
+        <p>
+            Com essa estrutura, conseguimos fazer com que o vídeo se encaixe corretamente em diferentes tamanhos de tela, mantendo sua proporção original de forma elegante e responsiva.
+        </p>
+
+        <div id="cont-video">
+            <div id="video-area">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/apJimum7pzk?si=xf7DpzchSFU1BLkj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    <a href="../" id="next">Proxima aula - </a>
+
+    </div>
+
+    
+</body>
+</html>
