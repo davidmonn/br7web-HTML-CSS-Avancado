@@ -302,3 +302,9 @@ img {
     }
 
 }
+
+.calc {
+    width: calc(100% - 30px);
+    height:200px;
+    background-color: #CCC;
+}
