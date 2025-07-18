@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>autofocus</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,18 +11,43 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior -  </a>
-            <h1 id="title"></h1>
+            <a href="../08_tag_placeholder/index.html">Aula anterior - placeholder</a>
+            <h1 id="title">autofocus</h1>
         </header>
 
         <section>
+            <h3>Oque e autofocus:</h3>
+            <p>
+                O atributo autofocus em um elemento de formulário (como < input >, < textarea >, < select >) faz com que aquele campo receba o foco automaticamente quando a página carrega. Ou seja, o cursor já fica piscando nesse campo, pronto para o usuário digitar.
+            </p>
+        </section>
+        <section>
+            <h3>Importante saber:</h3>
+            <p>
+                Só deve haver um único elemento com autofocus por página, pois o navegador foca só no primeiro que encontrar.
+            </p>
+            <p>
+                Funciona só quando a página carrega, não funciona depois via JavaScript (para isso, precisa usar .focus()).
+            </p>
+        </section>
 
+        <section>
+            <h3>Exemplo:</h3>
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Exemplo</legend>
+                    <label for="full-name">Nome completo:</label>
+                    <input type="text" id="full-name" placeholder="Nome completo:" autofocus>
+                </fieldset>
+
+            </form>
         </section>
 
         
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../10_size_e_maxlength/index.html" id="next">Proxima aula - size e maxlength</a>
 
     </div>
 
