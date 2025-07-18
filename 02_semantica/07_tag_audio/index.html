@@ -3,26 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compatibilidade com HTML5</title>
+    <title>Tag audio</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <heade>
-            <a href="../">Aula anterior -  </a>
-            <h1 id="title">Compatibilidade com HTML5</h1>
-        </heade>
+        <header>
+            <a href="../07_tag_audio/index.html">Aula anterior - Tag video</a>
+            <h1 id="title">Tag audio</h1>
+        </header>
 
         <section>
+            <h3>Intro:</h3>
+            <p>
+                A tag <strong> < audio > </strong> foi introduzida no HTML5 com o objetivo de adicionarmos sons e músicas em nossos sites, sem depender de plugins externos como Flash.
+            </p>
+        </section>
 
+        <section>
+            <p>
+                A estrutura da tag <strong>< audio ></strong> é muito parecida com a da tag <strong> < video > </strong>. Ela é uma tag de abertura e fechamento, e dentro dela usamos uma ou mais tags <strong> < source > </strong> para definir o(s) arquivo(s) de áudio
+            </p>
+            <p>
+                Normalmente para nosso <strong>type</strong> com <strong>src="som.mp3"</strong>(mp3) sera usado o <strong>type="audio/mpeg"</strong> <strong>audio/mpeg</strong>.
+            </p>
+            <p>
+                Se tivermos outros tipos de type como um audio <strong>OGG</strong>, podemos coloca-lo como alternativo dentro de nosso <strong>source</strong>, como alternativo, caso nao funcione o padrao ira para outra opcao.
+            </p>
+            <p>
+                Dentro de nossa tag audio, tambem iremos precisar de atributos como <strong>controls/autoplay</strong>
+            </p>
+        </section>
+
+        <section>
+            <h3>Outros atributos tambem usados:</h3>
+            <p>
+                <strong>loop:</strong> ao finalizar video/audio, ira se repetir automatico.
+            </p>
+            <p>
+                <strong>muted:</strong> ira iniciar a reproducao video/audio com volume no 0
+            </p>
+            <p>
+                <strong>preload:</strong> Define se o áudio será carregado automaticamente junto com a página, util quando usuaios possuem uma internet mais lenta
+            </p>
+        </section>
+        
+        <section>
+            <h3>Formatos suportados de audio:</h3>
+            <p>
+                <strong>mp3:</strong> mais compatível com navegadores.
+            </p>
+            <p>
+                <strong>OGG:</strong> formato aberto, usado como alternativa.
+            </p>
+            <p>
+                <strong>WAV:</strong> alta qualidade, porém arquivos maiores.
+            </p>
+        </section>`
+
+        <section>
+            <h3>Dica:</h3>
+            <p>
+                Usar várias tags <strong>< source ></strong> com formatos diferentes ajuda a garantir que o som será reproduzido em todos os navegadores. O navegador vai tentar carregar o primeiro formato compatível.
+            </p>
         </section>
 
         
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../08_tag_placeholder/index.html" id="next">Proxima aula - Tag placeholder</a>
 
     </div>
 
