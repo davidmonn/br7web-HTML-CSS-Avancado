@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compatibilidade com HTML5</title>
+    <title>Tag Video</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -12,11 +12,69 @@
 
         <heade>
             <a href="../">Aula anterior -  </a>
-            <h1 id="title">Compatibilidade com HTML5</h1>
+            <h1 id="title">Tag Video</h1>
         </heade>
 
         <section>
+            <h3>Intro Tag Video:</h3>
+            <p>
+                Nesta aula, vamos conhecer uma das tags mais populares do <strong>HTML5</strong>: a tag < video >. Ela revolucionou o uso de vídeos na web, pois eliminou a necessidade de usar plugins como o Flash. Com ela, podemos inserir um player de vídeo diretamente em nosso site de forma simples e eficiente.
+            </p>
+        </section>
+        <section>
+            <h3>Como usamos ?</h3>
+            <p>
+                A < video > é uma tag de abertura e fechamento, o que significa que ela abriga dentro dela outras tags ou elementos.
+            </p>
+            <p>
+                Nela temos alguns atributos que devemos inserir: <strong>width</strong> e <strong>height</strong>
+            </p>
+            <p>
+                Dentro de nossa tag, tambem podemos inserir mais alguams coisas como, a tag <strong>source</strong> que servira para adicionarmos a fonte de nosso video, ou seja, o arquivo ou link. <br> <br>
+                <strong>
+                    < video ><br> <br>
+                    < source src="link" type="tipo de video" > <br> <br>
+                    < /video >
+                </strong>
+            </p>
+            <p>
+                Se deixarmos apenas dessa forma, nao teremos nem uma opcao de controle de nosso video, aparecendo apenas o primeiro frame. Para poder funcionar corretamente, adicionaremos o <strong>atributo: controls</strong>
+            </p>
+        </section>
+        <section>
+            <h3>Atributos para tag video/source</h3>
+            <p>
+                <strong>width e height:</strong> definem a largura e altura do player.
+            </p>
+            <p>
+                <strong>controls:</strong> adiciona os controles básicos (play, pause, volume, etc).
+            </p>
+            <p>
+                <strong>autoplay:</strong> faz o vídeo iniciar automaticamente ao carregar a página.
+            </p>
+        </section>
 
+        <section>
+            <h3>Tipos de vídeo suportados pelo HTML5 (type):</h3>
+                        <ul>
+                <li>
+                    Dentro de nosso type temos 3 tipo suportados.
+                    <ul>
+                        <li>
+                            mp4
+                            <ul>
+                                <li>Suportado por todos os principais navegadores.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            WebM
+                        </li>
+                        <li>
+                            OGG/OGV
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
         
