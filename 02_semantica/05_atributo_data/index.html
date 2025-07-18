@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compatibilidade com HTML5</title>
+    <title>Atributo data</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,18 +11,56 @@
     <div id="main">
 
         <heade>
-            <a href="../">Aula anterior -  </a>
-            <h1 id="title">Compatibilidade com HTML5</h1>
+            <a href="../04_tags_d_input/index.html">Aula anterior - Tag de input</a>
+            <h1 id="title">Atributo data</h1>
         </heade>
 
         <section>
+            Os atributos data-* foram introduzidos no HTML5 para permitir que desenvolvedores adicionem informações personalizadas aos elementos HTML. Essas informações não afetam a aparência do elemento e não são visíveis para o usuário, mas podem ser acessadas e manipuladas facilmente com JavaScript.
+        </section>
+        <section>
+            <h3>Para que serve o data-*?</h3>
+            <p>
+                Ele é útil quando você precisa armazenar dados no HTML, como:
+            </p>
+            <ul>
+                <li>
+                    ID de usuário
+                </li>
+                <li>
+                    Nome
+                </li>
+                <li>
+                    Informações de produto (preço, cor, código)
+                </li>
+                <li>
+                    Status ou configurações específicas
+                </li>
+            </ul>
+            <p>
+                Esses dados podem ser lidos depois via JavaScript para tomar decisões, fazer cálculos, mostrar mensagens personalizadas, etc.
+            </p>
+        </section>
 
+        <section>
+            <h3>Resumo:</h3>
+            <ul>
+                <li>
+                    data-* é um atributo para guardar dados personalizados no HTML.
+                </li>
+                <li>
+                    Os valores podem ser acessados facilmente com JavaScript via element.dataset.
+                </li>
+                <li>
+                    Útil para armazenar informações que serão usadas no lado do cliente sem precisar usar variáveis ou requisições imediatamente
+                </li>
+            </ul>
         </section>
 
         
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../06_tag_video/index.html" id="next">Proxima aula - Tag Video</a>
 
     </div>
 
