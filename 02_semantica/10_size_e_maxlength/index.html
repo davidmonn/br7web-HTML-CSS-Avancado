@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>size e maxlength</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,18 +11,40 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior -  </a>
-            <h1 id="title"></h1>
+            <a href="../">Aula anterior - autofocus</a>
+            <h1 id="title">size e maxlength</h1>
         </header>
 
         <section>
+            <h3>Size:</h3>
+            <p>
+                Com ele conseguimos controlar quantos caracteres serão exibidos visualmente no campo de input. No entanto, se o campo for redimensionado com CSS, essa configuração pode não ter efeito visível.
+            </p>
+            <h3>maxlength:</h3>
+            <p>
+                Aqui conseguimos controlar quantos caracteres o usuário poderá digitar no campo. Ou seja, limita a quantidade máxima de entrada.  
+            </p>
+        </section>
 
+        <section>
+            <h3>Exemplo:</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Exemplo:</legend>
+                    <label for="full-name">Nome completo:</label>
+                    <input type="text" id="full-name" placeholder="Nome completo:" required autofocus maxlength="35">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Digite email:">
+                    <input type="submit" name="enviar" id="env" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
         </section>
 
         
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../11_required_input/index.html" id="next">Proxima aula - required input</a>
 
     </div>
 

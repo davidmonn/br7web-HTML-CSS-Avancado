@@ -160,13 +160,6 @@ textarea {
     border: 2px solid #CCC;
 }
 
-[type=reset] {
-    background-color: #EEE;
-    padding: 5px;
-    font-size: 15px;
-    border: 2px solid #CCC;
-}
-
 [type=submit]:hover {
     background-color:rgba(0, 0, 255, 0.091);
     transition: 0.5s;
