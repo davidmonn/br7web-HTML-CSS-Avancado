@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>autocomplete</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,18 +11,57 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior -  </a>
-            <h1 id="title"></h1>
+            <a href="../11_required_input/index.html">Aula anterior - required input</a>
+            <h1 id="title">autocomplete</h1>
         </header>
 
         <section>
+            <h3>Oque é autocomplete:</h3>
+            <p>
+                O atributo <strong>autocomplete</strong> é usado em campos de <strong>formulários</strong> <strong>HTML</strong> para sugerir automaticamente informações previamente inseridas pelo usuário, como e-mail, senha, nome, endereço, entre outros. Isso facilita o preenchimento, tornando o processo mais rápido e eficiente.
+            </p>
+        </section>
 
+        <section>
+            <h3>Para que serve:</h3>
+            <p>
+                Por exemplo, ao digitar o e-mail em um formulário, o navegador pode sugerir completar com um endereço usado anteriormente, graças ao autocomplete.
+            </p>
+        </section>
+
+        <section>
+            <h3>Opcoes de valores:</h3>
+            <p>
+                Com o atributo autocomplete, podemos usar dois valores principais: on e off.
+            </p>
+            <ul>
+                <li>
+                    <strong>autocomplete="on":</strong> ativa o preenchimento automático. O navegador pode sugerir e preencher automaticamente valores que o usuário já digitou anteriormente em campos semelhantes, como e-mail, nome, endereço, etc.
+                </li>
+                <li>
+                    <strong>autocomplete="off":</strong> desativa o preenchimento automático. Isso impede que o navegador sugira ou preencha automaticamente os valores no campo, o que é útil em situações como formulários sensíveis (ex: senhas ou dados bancários) ou quando queremos forçar o usuário a preencher tudo manualmente.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Ex:</h3>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Ex autocomplete:</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email:" autocomplete="on">
+                    <label for="first-name">Primeiro nome:</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Primeiro nome:" autocapitalize="off">
+                    <input type="submit" name="enviar" id="enviar" value="Submit">
+                </fieldset>
+            </form>
         </section>
 
         
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../13_normalize_css/index.html" id="next">Proxima aula - normalize CSS</a>
 
     </div>
 
