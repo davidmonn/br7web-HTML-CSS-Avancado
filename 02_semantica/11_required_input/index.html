@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>required input</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,12 +11,32 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior -  </a>
-            <h1 id="title"></h1>
+            <a href="../10_size_e_maxlength/index.html">Aula anterior - size e maxlength</a>
+            <h1 id="title">required input</h1>
         </header>
 
         <section>
+            <h3>oque é e para que serve ?</h3>
+            <p>
+                O atributo required é usado para tornar um campo obrigatório em formulários HTML. Quando aplicado a um < input >, < select > ou < textarea >, ele impede que o formulário seja enviado se aquele campo estiver vazio.
+            </p>
+        </section>
 
+        <section>
+            <h3>Ex:</h3>
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Ex required:</legend>
+                    <label for="full-name">Nome completo:</label>
+                    <input type="text" id="full-name" placeholder="Nome completo:" required autofocus>
+                    <label for="email">Email:
+                        <input type="email" name="email" id="email" placeholder="Email:" required>
+                    </label>
+                    <input type="submit" name="Enviar" value="Enviar">
+                </fieldset>
+
+            </form>
         </section>
 
         
