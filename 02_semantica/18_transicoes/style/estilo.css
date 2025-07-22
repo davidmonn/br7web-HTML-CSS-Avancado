@@ -320,26 +320,3 @@ img {
     height:200px;
     background-color: #CCC;
 }
-
- #teste {
-    background-color: green;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
- }
-
- #teste2 {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    /* border-radius: 10px 10px 0px 0px; temos essa forma */
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 30px;
- }
-
- [type=text], [type=email], [type=submit] {
-    background-color: rgba(192, 135, 244, 0.272);
-    border-radius: 20px;
- }
