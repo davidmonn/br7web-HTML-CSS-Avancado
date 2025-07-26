@@ -320,3 +320,21 @@ img {
     height:200px;
     background-color: #CCC;
 }
+
+.cont-m {
+    border: 1px solid black;
+    width:250px;
+    height:300px;
+    /* word-wrap: break-word; */
+}
+
+.p-m {
+    /* word-wrap: break-word; */
+}
+
+.cont-wb {
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+    word-wrap: break-word;
+}

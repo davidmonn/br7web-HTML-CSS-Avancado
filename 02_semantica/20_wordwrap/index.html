@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>WordWrap</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,12 +11,33 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior - </a>
-            <h1 id="title"></h1>
+            <a href="../19_webkit/index.html">Aula anterior - Webkit</a>
+            <h1 id="title">WordWrap</h1>
         </header>
 
         <section>
-            <h1></h1>
+            <h3>Intro WordWrap</h3>
+            <p>
+                Aqui veremos outro conceito de CSS, basicamente e quando temos um conteudo como um texto grande em nosso elemento, com a propriedade <strong>word-wrap</strong>, podemos resolver esse problema.
+            </p>
+            <h3>Ela possui 2 valores, sendo eles:</h3>
+            <ul>
+                <li><strong>word-wrap:</strong> normal (padrao)</li>
+                <li><strong>word-wrap:</strong> break-word (quebrar palavra), com isso ele respeitara o espacamento</li>
+            </ul>
+            <h3>Exemplo de um elemento com tamanho menor que o conteudo:</h3>
+            <div class="cont-m">
+                <p class="p-m">Aqui podemos observar como o conteudo do elemento reage quando temos um elemento menor que o conteudo. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Com word-wrap: break-word:</h3>
+            <div class="cont-wb">
+                <p>
+                    Com a propriedade word-wrap, ficara da seguinte forma: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                </p>
+            </div>
         </section>
 
         
