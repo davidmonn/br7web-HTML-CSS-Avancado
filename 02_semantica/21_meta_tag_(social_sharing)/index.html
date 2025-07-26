@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title> meta tag social sharing</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,18 +11,68 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior - </a>
-            <h1 id="title"></h1>
+            <a href="../20_wordwrap/index.html">Aula anterior - word-wrap</a>
+            <h1 id="title"> meta tag social sharing</h1>
         </header>
 
         <section>
-            <h1></h1>
+            <h3>Intro meta tag social sharing:</h3>
+            <p>
+                As <strong>meta tags de social sharing</strong> são trechos de código <strong>HTML</strong> usados para controlar como uma página aparece quando é compartilhada em redes sociais como Facebook, Twitter, LinkedIn, entre outras. Elas informam aos bots dessas plataformas o título, descrição, imagem e URL da página.
+            </p>
+        </section>
+
+        <section>
+            <h3>Como funciona:</h3>
+            <p>
+                A página precisa estar publicada online. Usamos a ferramenta Facebook Sharing Debugger para visualizar como o Facebook interpreta os dados da URL e forçar uma atualização (Scrape Again).
+            </p>
+            <p>
+                Para ele funcionar corretamente com: imagem, titulo, descricao e etc. Precisamos usar as principais <strong>meta tag</strong>, para funcionar essas configuracoes especificas.
+            </p>
+
+            <h3>1. Iremos comecar indo em nosso <strong>HTML</strong></h3>
+            <p>
+                Para fazer as modificacoes/adicoes iremos0 em nosso <strong>head</strong> com a tag <strong><meta></strong>, o primeiro <strong>meta</strong> iremos definir o link do arquivo ou site acessando, e dentro desse meta iremos usar os atributos: <strong> meta property="og:url(item que iremos descreve)" content="(url o site)"</strong>
+            </p>
+            <h3>2. Tipo do site</h3>
+            <p>
+            <strong> < meta property="og:type" content="article(mais usada), ou se fosse produto de venda, podemos usar um product" > </strong>
+            </p>
+
+            <h3>3. Titulo</h3>
+            <p>
+               <strong> < meta property="og:title" content="Titulo o nosso arquivo" > </strong> 
+            </p>
+
+            <h3>4. Descricao:</h3>
+            <p>
+                <strong> < meta property="og:description" content="A descricao do nosso arquivo" > </strong>
+            </p>
+
+            <h3>5. Imagem:</h3>
+            <p>
+                <strong> < meta property="og:image" content="link ou arquivo da imagem" > Por padrao recomendado pelo facebook para a imagem e de 1200*630 e no max 8mb</strong>
+            </p>
+
+
+            <h3>Obs:</h3>
+            <p>
+                A ordem nao importa essas sao apenas as padroes, foi feito dessa maneira para visualizar e entender as opcoes padroes, e oque cada uma fara, contato que tenha essas opcoes, basicamente tudo funcionara. Outras redes sociais, como o LinkedIn, também utilizam as tags OG.
+            </p>
+        </section>
+
+        <section>
+            <h3>Após configurar:</h3>
+            <p>
+                Podemos entrar no site novamente em nosso <strong>sharing debug</strong> podemos clicar em Scrape Again, ele ira pegar novamente as informacoesdo link passado, mas agora com tudo certo.
+            </p>
         </section>
 
         
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../22_listas_d_descricao/index.html" id="next">Proxima aula - Lista de Descricao</a>
 
     </div>
 
