@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Listas de Descrição em HTML</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,21 +11,54 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior - </a>
+            <a href="../21_meta_tag_(social_sharing)/index.html">Aula anterior - meta tag social sharing</a>
             <h1 id="title"></h1>
         </header>
 
         <section>
-            <h1></h1>
+            <h1>Introdução a Listas de Descrição</h1>
+            <p>
+                Aqui iremos ver um pouco mais sobre semântica. Embora muitas vezes não haja efeito visual, essas tags ajudam na acessibilidade, principalmente para pessoas que utilizam leitores de tela.
+            </p>
+            <p>
+                Quando temos uma lista de informações com título e descrição (texto, imagens, outras listas), podemos usar as tags semânticas apropriadas: <strong>dl</strong>, <strong>dt</strong> e <strong>dd</strong>.
+            </p>
+            <h3>dl (description list)</h3>
+            <p>
+                A tag <strong>dl</strong> representa a lista como um todo. Dentro dela, usamos <strong>dt</strong> para os títulos e <strong>dd</strong> para as descrições.
+            </p>
+            <h3>Exemplo de dl em HTML:</h3>
+            <picture>
+                <img src="img/Captura de tela 2025-07-28 012820.png" alt="Ex">
+            </picture>
+
+
+            <h3>Como ira ficar em nosso site:</h3>
+            <dl>
+                <dt><strong>Primeiro título</strong></dt>
+                <dd>Aqui podemos fazer uma descrição.</dd>
+                <dt><strong>Segundo título</strong></dt>
+                <dd>Descrição do segundo título.</dd>
+                <dt>Também podemos usar listas dentro da descrição:</dt>
+                <dd>
+                    <ul>
+                        <li>Usando <code>ul</code> dentro de <code>dd</code></li>
+                        <li>Podendo usar quantas linhas forem necessárias</li>
+                    </ul>
+                </dd>
+            </dl>
+
         </section>
 
-        
+        <section>
+            <h3>Resumo:</h3>
+            <p>
+                Basicamente, a tag <strong>&lt;dl&gt;</strong> funciona de forma semelhante à <strong>&lt;ul&gt;</strong>, pois agrupa um conjunto de itens. No entanto, em vez de usar apenas itens de lista, utilizamos <strong>&lt;dt&gt;</strong> para os títulos e <strong>&lt;dd&gt;</strong> para as descrições.
+            </p>
+        </section>
 
-
-    <a href="../" id="next">Proxima aula - </a>
-
+        <a href="../22_listas_d_descricao/index.html" id="next">Próxima aula - Citacoes</a>
     </div>
-
     
 </body>
 </html>
