@@ -320,3 +320,8 @@ img {
     height:200px;
     background-color: #CCC;
 }
+
+q {
+    color: #555;
+    font-style: italic;
+}
