@@ -320,3 +320,25 @@ img {
     height:200px;
     background-color: #CCC;
 }
+
+html, body {
+    height: 100%; /* Importante para ocupar a tela inteira */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% da altura da tela */
+}
+
+#main {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 5px;
+    width: 100%; /* Faz o footer ocupar a tela inteira */
+    margin: 0; /* Remove margens */
+}
