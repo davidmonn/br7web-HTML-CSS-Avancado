@@ -320,3 +320,16 @@ img {
     height:200px;
     background-color: #CCC;
 }
+
+figure {
+    padding: 5px;
+    margin: 0;
+    border: 1px solid #CCC;
+}
+
+figcaption {
+    background-color: #000;
+    color: #CCC;
+    text-align: center;
+    padding: 2px;
+}
