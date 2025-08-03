@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Normalize <strong>CSS</strong></title>
+    <title>Flexbox - Introducao e Direcao</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,41 +11,129 @@
     <div id="main">
 
         <header>
-            <a href="../12_auto_complete/index.html">Aula anterior - autocomplete</a>
-            <h1 id="title">Normalize CSS</h1>
+            <a href="../#">Aula anterior - </a>
+            <h1 id="title">Flexbox - Introducao e Direcao</h1>
         </header>
 
         <section>
-            <h3>Recomendacao de biblioteca CSS</h3>
+            <h3>Intro flexbox</h3>
             <p>
-                Aqui iremos ver uma recomendacao de biblioteca muito famosa, podendo acessar ela pelo GitHub, acessada <a href="https://github.com/necolas/normalize.css" target="_blank">clicando aqui</a>.
+                <strong>Flexbox</strong> e uma forma diferente de <strong>criarmos</strong> e <strong>organizarmos</strong> a estrutura de nosso layout/HTML.
             </p>
+        </section>
+
+        <section>
+            <h3>Compartivo de com e sem Flexbox</h3>
             <p>
-                Antigamente, para garantir que uma página funcionasse da mesma forma em diferentes navegadores, utilizávamos algo chamado CSS Reset. Ele servia para "resetar" todas as propriedades padrão dos elementos HTML, evitando comportamentos diferentes entre navegadores. No entanto, o CSS Reset tradicional tinha suas limitações.
+                Para criarmos um <strong>layout</strong> sem flexbox, normalmente criamos duas <strong>divs</strong>
+            </p>
+            <h3>Exemplo sem Flexbox:</h3>
+
+            <div id="cont-pai">
+                <div class="s-flex">
+                </div>
+                <div class="s-flex">
+                </div>
+            </div>
+
+            <p>
+                Acima podemos observar dois quadrado, normalmente para deixarmos um ao lado do outro, usamos a propriedade de <strong>CSS float: left;</strong> mas se no caso, quisermos que ambos quadrados tenham tamanhos variaveis, teriamos que fazer alguamas contas e processos mais complicados. Ja com <strong>flexbox</strong> esse trabalho se torna muito mais simples, facil e intuitivo
+            </p>
+
+
+            <!-- Com flexbox -->
+             <h3>Com flexbox</h3>
+             <p>
+                <strong>Flexbox</strong> basicamente significa uma caixa flexivel, ou seja, usar <strong>flexbox</strong> estamos basicamente dizendo que nossas divs, containers e etc serao mais adaptaveis.
+             </p>
+             <p>
+                Para ativarmos o <strong>flaxbox</strong> na div, usamos a propriedade: <strong>display:flex</strong> quando fazemos isso, dizemos que esse container tera um funcionamento <strong>flex</strong>
+             </p>
+             <div id="cont-flex">
+                Ex 01
+                 <div class="flex">
+                    1
+                 </div>
+                 <div class="flex">
+                    2
+                 </div>
+                 <div class="flex">
+                    3
+                 </div>
+             </div>
+
+            <div id="cont-flex2">
+                Ex 02
+                 <div class="flex2">
+                    1
+                 </div>
+                 <div class="flex2">
+                    2
+                 </div>
+                 <div class="flex2">
+                    3
+                 </div>
+             </div>
+
+            <div id="cont-flex3">
+                Ex 03
+                 <div class="flex-test1">
+                    1
+                 </div>
+                 <div class="flex-test2">
+                    2
+                 </div>
+             </div>
+
+             <p>
+                Como podemos observar, foi muito mais simples apos adicionar o flex no container pai, os demais container se ajustaram com o tamanho do conteudo introduzido dentro deles.
+             </p>
+
+        </section>
+
+        <section>
+            <h3>Padrao flexbox</h3>
+            <p>
+                Se nao especficarmos ao adiconarmos um <strong>display:flex</strong>, por padrao ele ira ser <strong>horizontal (linha)</strong> mas podemos mudar isso usando a propriedade <strong>flex-direction</strong> nela temos algumas opcoes:
             </p>
             <ul>
                 <li>
-                    Fornece um estilo base consistente entre diferentes navegadores;
+                    <strong>row (linha):</strong>padrao
                 </li>
                 <li>
-                    Corrige bugs e inconsistências comuns no CSS padrão dos navegadores;
+                    <strong>column (coluna):</strong> ira mudar para coluna
                 </li>
                 <li>
-                    Mantém os estilos úteis por padrão, ao invés de removê-los totalmente como o CSS Reset tradicional;
+                    <strong>row-reverse (linha ao contrario):</strong> ou seja, com essa opcao comecara da direita para esquerda
                 </li>
                 <li>
-                    Facilita o desenvolvimento de layouts mais previsíveis e responsivos;</li>
-                <li>
-                    É leve e fácil de usar — basta incluir no início do seu CSS.
+                    <strong>column reverse:</strong> mesma logica do <strong>row-reverse</strong>.
                 </li>
             </ul>
+        </section>
 
+        <section>
+            <h3>Explicacao dos ex</h3>
+            <h3>Ex 01</h3>
+            <p>
+                Mais basico, feito apenas para demonstrar os efeitos do flexbox sem uso de muitas propriedades, a nao ser as visuais.
+            </p>
+
+            <h3>Ex 02</h3>
+            <p>
+                Mostrado a propriedade <strong>flex-direction</strong> em forma de <strong>column</strong>.
+            </p>
+
+            <h3>Ex 02</h3>
+            <p>
+                Usado o <strong>flex:1;</strong>, basicamente e como se fosse um grupo e utilizando o 1 estamos dizendo que ele e do grupo 1 e a div dois a mesma coisa com flex: 1; ou seja, sera um grupo para as duas divs. Com isso o espaco reservado sera dividido entra essas duas divs do mesmo grupo.
+            </p>
         </section>
 
         
 
 
-    <a href="../14_borda_arredondada/index.html" id="next">Proxima aula - Borda Arredondada</a>
+    <a href="../02_alinhamentos_(1-2)/index.html" id="next">Proxima aula - Alinhamentos (1/2)</a>
 
     </div>
 
