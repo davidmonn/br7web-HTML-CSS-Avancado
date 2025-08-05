@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Normalize <strong>CSS</strong></title>
+    <title>Alinhamentos (1/2)</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,41 +11,107 @@
     <div id="main">
 
         <header>
-            <a href="../12_auto_complete/index.html">Aula anterior - autocomplete</a>
-            <h1 id="title">Normalize CSS</h1>
+            <a href="../01_introducao/index.html">Aula anterior - Introducao</a>
+            <h1 id="title">Alinhamentos (1/2)</h1>
         </header>
 
         <section>
-            <h3>Recomendacao de biblioteca CSS</h3>
+            <h3>Intro Alinhamento</h3>
             <p>
                 Aqui iremos ver uma recomendacao de biblioteca muito famosa, podendo acessar ela pelo GitHub, acessada <a href="https://github.com/necolas/normalize.css" target="_blank">clicando aqui</a>.
             </p>
             <p>
-                Antigamente, para garantir que uma página funcionasse da mesma forma em diferentes navegadores, utilizávamos algo chamado CSS Reset. Ele servia para "resetar" todas as propriedades padrão dos elementos HTML, evitando comportamentos diferentes entre navegadores. No entanto, o CSS Reset tradicional tinha suas limitações.
+                Nos <strong>flexbox</strong>, podemos tanto usar o atributo <strong>flex</strong> para adicionar um grupo e deixar todos do mesmo grupo com tamanhos iguais, como tambem podemos escolher o tamanho por meio de <strong>width</strong>, mas se a largura for muito grande e houver muitas divs para ficarem lado a lado, o <strong>flexbox</strong> ira diminuir esse tamanho, pois por padrao o <strong>flexbox</strong> nao vem com <strong>wrep</strong>.
+            </p>
+
+            <h3>Habilitando wrap no flexbox</h3>
+            <p>
+                Por padrao vem com <strong>nowrap</strong>.Para podermos contornar o problema de se precisarmos que o <strong>flex</strong> quebre nosso elemento para linha de baixo apos ser ocupado todo o espaco, podemos usar: <strong>flex-wrap:wrap;</strong>
+            </p>
+
+            <h1>Atalho</h1>            
+            <h3>flex-direction+flex-wrap</h3>
+            <p>
+                Temos um atalho que podemos definir tanto o <strong>flex-direction</strong>, quanto <strong>flex-wrap</strong> em apenas uma <strong>propriedade</strong>.
+            </p>
+
+            <h3>flex-flow:</h3>
+            <p>
+                E uma propriedade que nos permite especificar duas coisas ao mesmo tempo ex:
+            </p>
+            <p>
+                <strong>flex-flow: row wrap;</strong> <br>
+                Com isso estamos definindo que seu alinhamento sera <strong>row</strong> com <strong>wrap</strong> (quebra de linha).
+            </p>
+
+            <h3>Exemplo de uso wrap</h3>
+            <div id="cont-pai">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+
+        </section>
+
+        <section>
+            <h3>Aqui iremos ver meio de alinhamento</h3>
+            <p>
+                Existem duas <strong>proriedaes</strong> para que possamos alinha nosso elemento centralizado com a tela, sendo eles:
             </p>
             <ul>
                 <li>
-                    Fornece um estilo base consistente entre diferentes navegadores;
+                    <strong>justify-content:</strong>
+                    <ul>
+                        <li>
+                            <strong>justify-content: center;</strong> usado no container pai, para que os filhos herdem, alinha apenas na linha.
+                        </li>
+                        <li>
+                            <strong>justify-content: flex-start;</strong> onde comecar o flex, sera feito o alinhamento
+                        </li>
+                        <li>
+                            <strong>justify-content: flex-end;</strong> alinhara onde acaba o flex.
+                        </li>
+                        <li>
+                            <strong>justify-content: space-around;</strong> basicamente ira alinhar os itens de forma que o espacamento entre eles seja igual.
+                        </li>
+                        <li>
+                            <strong>justify-content: space-between;</strong> o primeiro e o ultimo item ficam colados nas suas respectivas bordas e o do meio fica no centro ou espalhados no centro da tela se forem mais de 3.
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    Corrige bugs e inconsistências comuns no CSS padrão dos navegadores;
-                </li>
-                <li>
-                    Mantém os estilos úteis por padrão, ao invés de removê-los totalmente como o CSS Reset tradicional;
-                </li>
-                <li>
-                    Facilita o desenvolvimento de layouts mais previsíveis e responsivos;</li>
-                <li>
-                    É leve e fácil de usar — basta incluir no início do seu CSS.
+                    <strong>align-items:</strong>
+                    <ul>
+                        <li>
+                            <strong>align-items:center;</strong> alinha na coluna, depende da exibicao do elemento, se tiver em colunas ou row.
+                        </li>
+                        <li>
+                            <strong>align-items: flex-end;</strong>
+                        </li>
+                        <li>
+                            <strong>align-items: start;</strong>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-
+            <div id="cont-pai2">
+                <div class="test2">1</div>
+                <div class="test2">2</div>
+                <div class="test2">3</div>
+            </div>
         </section>
 
         
 
 
-    <a href="../14_borda_arredondada/index.html" id="next">Proxima aula - Borda Arredondada</a>
+    <a href="../03_alinhamentos_(2-2)/index.html" id="next">Proxima aula - Alinhamento (2/2)</a>
 
     </div>
 
