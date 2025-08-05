@@ -320,3 +320,51 @@ img {
     height:200px;
     background-color: #CCC;
 }
+
+section ul{
+    font-size: 18px;
+}
+
+#cont-pai {
+    display: flex;
+    background-color: var(--bd-color);
+    height: 350px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont-pai div,
+#cont-pai-ex3 div {
+    background-color: var(--main-color);
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+}
+
+/* Ex 01 - align-self */
+
+.cont-test-ex1 {
+    align-self: flex-start;
+}
+
+/* Ex 02 - order */
+
+.cont-test-ex2 {
+    order: -1;
+}
+
+/* Ex 03 - */
+#cont-pai-ex3 {
+    display: flex;
+    background-color: var(--bd-color);
+    text-align: center;
+    height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}

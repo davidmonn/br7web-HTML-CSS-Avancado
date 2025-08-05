@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Alinhamentos (2/2)</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
@@ -11,18 +11,111 @@
     <div id="main">
 
         <header>
-            <a href="../">Aula anterior - /a>
-            <h1 id="title"></h1>
+            <a href="../02_alinhamentos_(1-2)/index.html">Aula anterior - Alinhamentos (1/2)</a>
+            <h1 id="title">Alinhamentos (2/2)</h1>
         </header>
 
         <section>
-            <h3></h3>
+            <h3>Intro</h3>
+            <p>
+                Aqui iremos ver mais duas propriedades importantes de <strong>alinhamentos</strong>, nao sao tao importantes quanto as mostradas na <a href="../02_alinhamentos_(1-2)/index.html"><strong>parte 1</strong></a>, mas ainda sim sao muito importantes.
+            </p>
+            <p>
+                Essas duas propriedades poderam ser usadas, dependendo da situacao, situacoes onde iremos precisar usar elas, e situacoes onde nao iremos precisar. 
+            </p>
+            <p>
+                Quando fazemos um alteracao na <strong>div pai</strong>, como por ex usar um <strong>flex-direction</strong> ou <strong>align-items</strong>, podemos reescrever essas propriedades dada, selecionando a <strong>div</strong> que deseje que seja alterado.
+            </p>
+        </section>
+
+        <section>
+            <h3>Na pratica</h3>
+            <p>
+                Podemos por exemplo selecionar uma ou mais divs que desejamos que nao sofra alteracao da div pai. Para facilitar podemos adicionar uma class especifica nela, para ajudar a selecionar. Apos selecionar a que desejamos, podemos usar a propriedade: 
+            </p>
+            <p>
+                <strong>align-self:;</strong> basicamente diz que o alinhamento do elemento selecionado, sera oque escolhermos. Ou seja, serve para sobre escrever a propriedade <strong>align-items</strong>
+            </p>
+            <h3>Algumas opcoes de align-self:</h3>
+            <ul>
+                <li>
+                    <strong>align-self:;</strong>
+                    <ul>
+                        <li>
+                            <strong>align-self: flex-start;</strong>
+                        </li>
+                        <li>
+                            <strong>align-self: ;</strong>
+                        </li>
+                        <li>
+                            <strong>align-self: ;</strong>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Ex align-self:</h3>
+            <div id="cont-pai">
+                <div class="cont-test">1</div>
+                <div class="cont-test">2</div>
+                <div class="cont-test-ex1">3</div>
+                <div class="cont-test">4</div>
+                <div class="cont-test">5</div>
+            </div>
+
+            <h3>Propriedade: order</h3>
+            <p>
+                Podemos tambem alterar a ordem em que um item aparece, sem precisarmos alterar o <strong>HTML</strong> onde no metodo tradicional, precisariamos mudar todo nosso <strong>HTML</strong> ou usar <strong>JS</strong> para fazer isso
+            </p>
+
+
+            <div id="cont-pai">
+                <div class="cont-test">1</div>
+                <div class="cont-test">2</div>
+                <div class="cont-test-ex2">3</div>
+                <div class="cont-test">4</div>
+                <div class="cont-test">5</div>
+            </div>
+
+
+            <h3>Obs</h3>
+            <p>
+                Muito importante se lembrar que quando usarmos essa propriedade, basicamente todos os elementos, tem uma <strong>order: 0;</strong>, e quando damos um valor para ela como 1, ela ira para o final, entao se quisermos por exemplo fazer igual ao ex acima para deixar o 3 em primeiro, usamos nele <strong>order: -1;</strong>
+            </p>
+        </section>
+
+        <section>
+
+            <h3>align-content</h3>
+            <p>
+                Atua sobre o conjunto de linhas dentro do container flex e só funciona quando existe quebra de linha, ou seja, quando usamos <strong>flex-wrap: wrap;</strong>. Ele não move cada item separadamente, mas sim todas as linhas ao mesmo tempo.
+            </p>
+            <ul>
+                <li>
+                    <strong>align-content:;</strong>
+                    <ul>
+                        <li><strong>align-content: center;</strong> centraliza</li>
+                        <li><strong>align-content: flex-start;</strong></li>
+                        <li><strong>align-content: flex-end;</strong></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div id="cont-pai-ex3">
+                <div class="cont-test">1</div>
+                <div class="cont-test">2</div>
+                <div class="cont-test-ex3">3</div>
+                <div class="cont-test">4</div>
+                <div class="cont-test">5</div>
+                <div class="cont-test">6</div>
+                <div class="cont-test">7</div>
+            </div>
         </section>
 
         
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../04_projeto_c_flexbox_(pt1)/index.html" id="next">Proxima aula - Projeto: Site com Flexbox e HTML Semântico (parte 1)</a>
 
     </div>
 
