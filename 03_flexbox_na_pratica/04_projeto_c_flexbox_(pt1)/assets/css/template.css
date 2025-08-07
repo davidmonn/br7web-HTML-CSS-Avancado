@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    width: 990px;
+    display: flex;
+    justify-content: space-between ; /* Para cada div ficar de um lado da tela*/
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Para podermos alinhar a imagem */
+}
+
+.menu {
+
+}
