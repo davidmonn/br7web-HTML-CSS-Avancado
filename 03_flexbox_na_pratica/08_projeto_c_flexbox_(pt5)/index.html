@@ -3,29 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style/estilo.css">
+    <title>Projeto MediCenter (Part 5)</title>
+    <link rel="stylesheet" href="assets/css/template.css">
 </head>
 <body>
 
-    <div id="main">
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
 
-        <header>
-            <a href="../">Aula anterior - /a>
-            <h1 id="title"></h1>
-        </header>
+            <div class="logo">
+                <a href="#">
+                    <img src="../04_projeto_c_flexbox_(pt1)/assets/images/logo.png" alt="Logo MediCenter">
+                </a>
+            </div>
 
-        <section>
-            <h3></h3>
-        </section>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">SOBRE</a></li>
+                        <li><a href="#">SERVIÇOS</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        
+        </div>
+    </header>
 
+    <!-- Banner -->
+    <section id="banner">
 
-    <a href="../" id="next">Proxima aula - </a>
+        <!-- Pai flex em coluna -->
+        <div class="container-column">
+            
+            <!-- Texto do banner -->
+            <div class="banner-headline">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+            </div>
 
-    </div>
+            <!-- Opções do banner -->
+            <div class="banner-options">
+                <div class="banner1">
+                    <div class="banner-title">
+                        Emergency Case
+                    </div>
+                    <div class="banner-desc">algum texto qualquer</div>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner-title">
+                        Doctors Timetable
+                    </div>
+                    <div class="banner-desc">algum texto qualquer</div>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner-title">
+                        Opening Hours
+                    </div>
+                    <div class="banner-desc">
+                        <div class="open">
+                            <p class="op1">Monday - Friday 08:00 - 17:00</p>
+                        </div>
+                        <div class="open">
+                            <p class="op2">Saturday 09:30 - 17:30</p>
+                        </div>
+                        <div class="open">
+                            <p class="op3">Sunday 09:00 - 15:00</p>
+                        </div>
+                    </div>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
 
-    
+        </div>
+
+    </section>
+
+    <!-- CONTEUDO DO SITE -->
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget-title">
+                        <div class="widget-title-text">
+                            Latest News
+                        </div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+                    <div class="widget-body">
+                        
+                        <div class="flex">
+                            <article>
+                                <a href="#" class="news-link">
+                                    <div class="news-date">
+                                        <div class="news-posted-at">12 DEC 12</div>
+                                        <div class="news-coments">2</div>
+                                    </div>
+                                    <div class="news-thumbnail">
+                                        <img src="assets/images/dr.jpg" alt="dr">
+                                    </div>
+                                    <div class="news-title">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                    </div>
+                                    <div class="news-resume">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis voluptatum dolorem aperiam consequuntur eos ipsum praesentium omnis. Soluta harum vero aliquam accusantium nemo delectus! Rerum quaerat perferendis itaque aperiam.
+                                        
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#" class="news-link">
+                                    <div class="news-date">
+                                        <div class="news-posted-at">12 DEC 12</div>
+                                        <div class="news-coments">2</div>
+                                    </div>
+                                    <div class="news-thumbnail">
+                                        <img src="assets/images/dr.jpg" alt="dr">
+                                    </div>
+                                    <div class="news-title">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                    </div>
+                                    <div class="news-resume">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis voluptatum dolorem aperiam consequuntur eos ipsum praesentium omnis. Soluta harum vero aliquam accusantium nemo delectus! Rerum quaerat perferendis itaque aperiam.
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#" class="news-link">
+                                    <div class="news-date">
+                                        <div class="news-posted-at">12 DEC 12</div>
+                                        <div class="news-coments">2</div>
+                                    </div>
+                                    <div class="news-thumbnail">
+                                        <img src="assets/images/dr.jpg" alt="dr">
+                                    </div>
+                                    <div class="news-title">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                    </div>
+                                    <div class="news-resume">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis voluptatum dolorem aperiam consequuntur eos ipsum praesentium omnis. Soluta harum vero aliquam accusantium nemo delectus! Rerum quaerat perferendis itaque aperiam.
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#" class="news-link">
+                                    <div class="news-date">
+                                        <div class="news-posted-at">12 DEC 12</div>
+                                        <div class="news-coments">2</div>
+                                    </div>
+                                    <div class="news-thumbnail">
+                                        <img src="assets/images/dr.jpg" alt="dr">
+                                    </div>
+                                    <div class="news-title">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                    </div>
+                                    <div class="news-resume">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis voluptatum dolorem aperiam consequuntur eos ipsum praesentium omnis. Soluta harum vero aliquam accusantium nemo delectus! Rerum quaerat perferendis itaque aperiam.
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget-title">
+                        <div class="widget-title-text">
+                            Departments
+                        </div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+                    <div class="widget-body">
+                        <div class="space"></div>
+                        <div class="space"></div>
+                        <div class="space"></div>
+                        <div class="space"></div>
+                        <div class="space"></div>
+                        <div class="space"></div>
+                    </div>
+                <div class="widget">
+                    <div class="widget-title">
+                        <div class="widget-title-text">
+                            Make An Appointment
+                        </div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+                    <div class="widget-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam delectus.</p>
+                    </div>
+                    <div class="info">
+                        <div class="end-bar"></div>
+                        <div>
+                            <p>by phone: x-888-341-123</p>
+                        </div>
+                        <div class="end-bar"></div>
+                        <div>
+                            <p>by e-mail: <a href="#">duashd@djie.com</a></p>
+                        </div>
+                        <div class="end-bar"></div>
+                        <div>
+                            <p>Lorem <a href="#">ipsum dolor sit</a> amet</p>
+                        </div>
+                        <div class="end-bar"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <a href="../" id="next">Próxima aula</a>
+
 </body>
 </html>
