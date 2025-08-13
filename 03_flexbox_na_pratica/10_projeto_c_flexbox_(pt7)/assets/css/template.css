@@ -343,3 +343,89 @@ footer .lk {
     font-weight: bold;
     margin: 15px;
 }
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 390px) {
+
+    .menu {
+        font-size: 13px;
+        max-width: 390px;
+        width: auto;
+        height: auto;
+    }
+
+    .banner-headline {
+        padding: 20px;
+    }
+
+    .banner-headline h1 {
+        font-size: 30px;
+    }
+
+    .banner-headline h2 {
+        font-size: 17px;
+    }
+
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    #geral section, aside {
+        padding: 20px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+    
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-copy {
+        padding: 0 0 0 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .mm-line {
+        height: 3px;
+        background-color: #39aae1;
+    }
+
+}
