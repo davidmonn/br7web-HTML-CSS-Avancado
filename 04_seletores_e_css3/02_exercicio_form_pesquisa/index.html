@@ -13,14 +13,55 @@
         <section>
             <h1>Cadastro de aluno</h1>
             <form action="#" method="get">
-                <fieldset>
+                <fieldset id="pessoais">
                     <legend>Dados do aluno</legend>
-                    <label for="">Id
+                    <label for="">Id:
                         <input type="number" placeholder="Id aluno:">
                     </label>
                     <label> Nome:
                         <input type="text" placeholder="Nome do aluno:">
-                        
+                    </label>
+                    <label> Data de nascimento:
+                        <input type="date">
+                    </label>
+                    <label for="cpf">CPF:
+                    <input type="number" id="cpf" placeholder="CPF:">
+                    </label>
+                    <label>RG:
+                        <input type="number" placeholder="RG:">
+                    </label>
+                    <label> Telefone:
+                        <input type="tel" placeholder="Telefone:">
+                    </label>
+                    <label>Celular:
+                        <input type="tel" placeholder="Celular:">
+                    </label>
+                    <label>Email:
+                        <input type="email" placeholder="Email:">
+                    </label>
+                    <label>Curso:
+                        <input type="text" placeholder="Curso:">
+                    </label>
+                </fieldset>
+                <fieldset id="responsavel">
+                    <legend>Dados do responsavel:</legend>
+                    <label>Nome:
+                        <input type="text" placeholder="Nome responsavel:">
+                    </label>
+                    <label>CPF:
+                        <input type="number" placeholder="CPF:">
+                    </label>
+                    <label>RG:
+                        <input type="number" placeholder="RG:">
+                    </label>
+                    <label> Celular:
+                        <input type="tel" placeholder="Cel:">
+                    </label>
+                    <label>Data de Nasc:
+                        <input type="date">
+                    </label>
+                    <label>Email:
+                        <input type="email" placeholder="Email:">
                     </label>
                 </fieldset>
             </form>
