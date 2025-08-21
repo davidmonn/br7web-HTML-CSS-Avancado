@@ -13,8 +13,8 @@
 body {
     background-color: #073359;
     background-image: url(../images/360_F_490374887_ZzB27OtMi733pwgZVNNoYc7IW1W12Qkb.jpg);
-    background-repeat: repeat;
-    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 }
 
@@ -27,11 +27,11 @@ body {
 
 section {
     display: flex;
-
 }
 
 .menu {
     display: flex;
+    width: 100%;
 }
 
 a {
@@ -48,7 +48,8 @@ nav {
     display: flex;
     width: 100%;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
+    text-shadow: 3px 2px 5px;
 }
 
 .options li a{
@@ -57,6 +58,7 @@ nav {
     padding: 10px;
     color: #05F2F2;
     text-decoration: none;
+    width: 100%;
 }
 
 .produto {
@@ -77,27 +79,31 @@ nav {
 
 .cont {
     display: flex;
-    justify-content: center;
     margin: 50px 0 0 0;
+    width: 100%;
 }
 
 .produtos {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-around; /* distribui os cards */
     align-items: center;           /* alinha verticalmente */
     gap: 20px;                     /* espaço fixo entre os cards */
+    width: 100%;
 }
 
 .desc {
     display: flex;
     flex-direction: column;
-    background: #084F8C;
-    padding: 15px;
+    background: #084e8c52;
+    padding: 10px;
     border-radius: 8px;
-    width: 200px;
-    text-align: justify;
-    
+    width:300px;
+}
+
+.desc p {
+    text-align: left;
+    text-indent: 10px;
 }
 
 .desc h2 {
