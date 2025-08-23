@@ -1,0 +1,181 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: #202124;
+    color: #E8EAED;
+}
+
+/*Link Geral*/
+a {
+    color: #E8EAED;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* HEADER */
+header  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+/* NAV */
+
+#nav {
+    display: flex;
+    font-size: 11px;
+}
+#nav ul, li{
+    display: flex;
+    list-style: none;
+}
+
+#nav ul li {
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0 15px 0 0;
+}
+
+#nav a {
+    padding: 0;
+    margin: 0;
+}
+
+.perfil {
+    display: flex;
+    background-image: url(../img/perfil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+}
+
+/* LOGO */
+
+section .logo,
+.logo img {
+    display: flex;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.logo img {
+    width: 25vw;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search [type=search]{
+    display: flex;
+    background-color: #5F6368;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    width: 30vw;
+    height: 5vh;
+}
+
+/* FOOTER */
+footer {
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    margin-top: 38vh;
+    width: 100%;
+    font-size: 13px;
+}
+
+footer p {
+    display: block;
+    padding: 1.5vh;
+    text-indent: 1vw;
+    border-bottom: 1px solid #444746;
+}
+
+.plus {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left,
+.right {
+    display: flex;
+    padding: 1.5vh;
+}
+
+.left ul, li {
+    display: flex;
+    text-indent: 1vw;
+}
+
+.left {
+    justify-content: left;
+    flex:1;
+}
+
+.right ul, li {
+    display: flex;
+    margin-right: 1vw;
+}
+
+.right {
+    justify-content: right;
+    flex: 1;
+}
+
+/* .plus {
+    display: flex;
+    width: 100%;
+}
+
+.options-footer, 
+.left, 
+.left ul,
+.right,
+.right ul{
+    display: flex;
+}
+
+.left ul li,
+.right ul li {
+    display: flex;
+}
+
+.options-footer {
+    padding: 5px;
+}
+
+.options-footer .left {
+    display: flex;
+    justify-content: left;
+}
+
+.options-footer .right {
+    display: flex;
+    justify-content: right;
+} */
