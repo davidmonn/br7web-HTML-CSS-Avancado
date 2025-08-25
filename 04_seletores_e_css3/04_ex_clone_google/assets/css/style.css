@@ -47,8 +47,7 @@ header  {
 
 #nav ul li {
     align-items: center;
-    padding: 20px 0px;
-    margin: 0 15px 0 0;
+    margin: 10px 15px 0 0;
 }
 
 #nav a {
@@ -59,6 +58,17 @@ header  {
 .perfil {
     display: flex;
     background-image: url(../img/perfil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+}
+
+.apps {
+    display: flex;
+    background-image: url(../img/Apps-Google-Chrome-App-List-icon.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,7 +114,9 @@ footer {
     background-color: #171717;
     display: flex;
     flex-direction: column;
-    margin-top: 38vh;
+    /* margin-top: 38vh; */
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     font-size: 13px;
 }
@@ -146,6 +158,64 @@ footer p {
 .right {
     justify-content: right;
     flex: 1;
+}
+
+/* RESPONSIVIIDADE */
+
+@media (min-width:430px) and (max-width:520px) {
+
+        #nav {
+            display: flex;
+            justify-content: space-between; /* separa esquerda e direita */
+            margin: 5px 10px;
+            width: 100%;
+        }
+
+        #nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .left {
+            justify-content: flex-start;
+        }
+
+        .right {
+            justify-content: flex-end;
+        }
+
+        .logo img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+        .search [type=search]{
+        display: flex;
+        background-color: #5F6368;
+        border-radius: 50px;
+        border: none;
+        padding: 15px;
+        width: 405px;
+        height: 5vh;
+    }
+
+        footer {
+        background-color: #171717;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* margin-top: 38vh; */
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .left,
+    .right {
+        display: none;
+    }
 }
 
 /* .plus {
