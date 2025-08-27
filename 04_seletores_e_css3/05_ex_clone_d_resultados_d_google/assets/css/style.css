@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     max-width: 100%;
     min-width: 100%;
+    font-family: sans-serif;
 }
 
 /* Links */
@@ -34,60 +35,96 @@ a:hover {
     text-decoration: underline;
 }
 
-/* HEADER */
+/* HEADER BUSCA*/
 
-#header {
+#header .busca {
     display: flex;
-    background-color: rgba(255, 0, 0, 0.144);
-    flex-direction: row;
+    align-items: center; /* centraliza verticalmente */
+    gap: 20px; /* espaço entre logo e form */
+    padding: 20px 70px; /* ajusta margem parecida com Google */
+}
+
+#header picture img {
+    display: block; /* imagem padrão */
+    max-width: 120px; /* tamanho fixo em vez de % */
+}
+
+.search {
+    flex: 1; /* ocupa o resto do espaço */
+}
+
+.search form {
+    display: flex;
     width: 100%;
 }
 
-.img,
-#pesquisa,
-.menu,
-.tags {
-    display: flex;
-    width: 100%;
-}
-
-#header .img picture img {
-    display: flex;
-    justify-content: left;
-    max-width: 10%;
-    min-width: 5%;
-}
-
-#header .img img {
-    display: flex;
-    margin-left: 25px;
-    margin-top: 25px;
-}
-
-/* FORM */
-form,
-label,
-input {
-    display: flex;
-}
-
-form {
-    flex-direction: row;
-}
-
-.img,
-#pesquisa {
-    flex-direction: column;
-    /* background-color: #91b9f139; */
-}
-
-#pesquisa {
-    width: 100%;
-    justify-content: left;
-    margin: 25px 0px;
-}
-
-[type=search] {
-    border-radius: 10px;
+.search input[type=search] {
+    border-radius: 20px;
     background-color: var(--search);
+    width: 700px; /* ocupa o espaço da div */
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* margin-right: -40px; */
+}
+
+.menu ul, li {
+    display: flex;
+    margin: 0 0 0 5px;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 5px;
+}
+
+.menu ul, li img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.tags {
+    font-size: 12px;
+    /* background-color: #91b9f152; */
+    width: 46%;
+    margin-left: 210px;
+}
+
+.tags, ul, li {
+    display: flex;
+}
+
+.tags li {
+    margin: 0 10px;
+}
+
+.tags a {
+    font-weight: bolder;
+    color: var(--search);
+}
+
+.tags a:hover {
+    color: white;
+}
+
+.geral {
+    flex:1;
+}
+
+/* SECTION LINKS */
+#links {
+    /* background-color: #91b9f152; */
+    width: 46%;
+    margin-top: 25px;
+    margin-left: 223px;
+}
+
+.site {
+    margin: 25px 0;
 }
