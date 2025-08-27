@@ -162,7 +162,7 @@ footer p {
 
 /* RESPONSIVIIDADE */
 
-@media (min-width:390px) and (max-width:520px) {
+@media (min-width:300px) and (max-width:520px) {
 
         #nav {
             display: flex;
@@ -210,6 +210,10 @@ footer p {
         width: 100%;
         font-size: 13px;
         width: 100%;
+    }
+
+    .plus {
+        display: none;
     }
 
     .left,
