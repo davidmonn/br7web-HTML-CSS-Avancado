@@ -308,3 +308,15 @@ img {
     height:200px;
     background-color: #CCC;
 }
+
+input, a {
+    display: block; /* Para ficar cada um em sua linha */
+}
+
+[required] {
+    background-color: rgba(98, 255, 0, 0.525);
+}
+
+input[name="nome"] {
+    background-color: red;
+}

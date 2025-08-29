@@ -3,16 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Seletor pelo atribubuto (1/2)</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../03_flexbox_na_pratica/11_projeto_c_flexbox_(pt8)/index.html">Modulo anterior - Aula: Projeto Flexbox part 8</a>
+        <a href="../../03_flexbox_na_pratica/11_projeto_c_flexbox_(pt8)/index.html"></a>
 
-        <h1 id="title">03 Modulo: Seletores e CSS 3 - Aula: </h1>
+        <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: Seletores de Atributo (1/2)</h1>
+        <section>
+            <h2>Introducao:</h2>
+            <p>
+                Aprendemos ate agora algumas formas de selecionar elementos, mas nessa aula veremos como selecionar por meio de atributos como <strong>href, type, name, required</strong> e etc.
+            </p>
+
+            <p>Iremos usar como exemplo alguns links para podermos selecionar pelo atributo href e formulario</p>
+
+            <a href="google.com.br" target="_blank">
+                Teste 1 - Google
+            </a>
+            <a href="youtube.com.br" target="_blank">
+                Teste 2 - Youtube
+            </a>
+
+            <form action="#" method="get">
+                <input type="text" name="nome" placeholder="Teste 3 - type: text">
+                <input type="email" name="emaiil" placeholder="Teste 4 - type email com required" required>
+            </form>
+
+        </section>
+
+        <section>
+            <h3>Explicacao</h3>
+            <p>
+                Quando selecionamos por meio de atributo como por exemplo <strong>required</strong> fazemos da seguinte forma em nosso <strong>CSS:</strong> <strong>[required] {}</strong> com isso podemos fazer as modificacoes.
+            </p>
+            <p>
+                Podemos tambem combinar selecionando um elemento junto do atributo podendo ser tambem <strong>class ou id</strong>. Ex <strong>input[required] {}</strong>
+            </p>
+            <p>
+                Tambem temos opcao de por exemplo usar em um <strong>name</strong> do <strong>input</strong> mas nesse caso teremos que usar as aspas <strong>""</strong> pois e um valor nao padrao. Ex <strong>name="email"</strong>
+            </p>
+        </section>
 
 
 
