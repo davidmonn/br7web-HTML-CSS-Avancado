@@ -3,16 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Seletor pelo atribubuto (2/2)</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../03_flexbox_na_pratica/11_projeto_c_flexbox_(pt8)/index.html">Modulo anterior - Aula: Projeto Flexbox part 8</a>
+        <a href="../../04_seletores_e_css3/06_seletor_pelo_atributo(1-2)/index.html">Seletores de atributo (1/2)</a>
 
-        <h1 id="title">03 Modulo: Seletores e CSS 3 - Aula: </h1>
+        <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: Seletores de Atributo (2/2)</h1>
+        <section>
+            <h2>Introducao:</h2>
+            <p>
+                Aprendemos ate agora algumas formas de selecionar elementos, mas nessa aula veremos como selecionar por meio de atributos como <strong>href, type, name, required</strong> e etc.
+            </p>
+
+            <p>Iremos usar como exemplo alguns links para podermos selecionar pelo atributo href e formulario</p>
+
+            <a href="https://www.cnnbrasil.com.br/nacional/brasil/">Noticias</a>
+            <a href="https://g1.globo.com/tecnologia/" target="_blank">Noticias - Tecnologia</a>
+            <a href="http://google.com.br" target="_blank">Google teste - http sem o s</a>
+            <a href="http://youtube.com.br">Youtube teste - errado</a>
+            <a href="https://google.com.br">Google</a>
+            <a href="https://youtube.com.br">Youtube</a>
+            <a href="https://google.com.br/html/teste">Teste</a>
+            <form action="#" method="get">
+                <input type="text" name="nome" placeholder="Teste 3 - type: text">
+                <input type="email" name="emaiil" placeholder="Teste 4 - type email com required" required>
+            </form>
+
+        </section>
+
+        <section>
+            <h3></h3>
+            <p>
+                Podemos selecionar um link com o valor do <strong>href</strong>, nele temos duas opcoes ou podemos colocar a <strong>url inteira</strong>, ou podemos pegar apenas um trecho por exemplo que tenha o "noticia". Mas para isso poder funcionar e ele buscar as palavras que tenham usamos o * ficando da seguinte forma ex: <br>
+                <strong>
+                    a[href*="tecnologia"] { <br>
+                    background-color: rgba(5, 89, 89, 0.535); <br>
+                    }
+                </strong>
+            </p>
+            <h3>Filtro multiplo</h3>
+            <p>
+                Tambem temos opcao de fazer multiplas modificacoes por meio de palavras iguais por ex: queremos que uma determinada palavra em nosso atributo fique de uma cor e varias delas tem essa palavra chave. Para fazermos isso iremos usar <strong>^=</strong> dessa forma ele ira filtrar e buscar todas as palavras que deseja e aplicar em todas.
+            </p>
+
+            <h3>Selecao por meio do fim</h3>
+            <p>
+
+            </p>
+        </section>
 
 
 
