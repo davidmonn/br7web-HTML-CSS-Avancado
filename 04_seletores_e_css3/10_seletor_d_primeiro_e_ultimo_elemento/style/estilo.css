@@ -341,3 +341,19 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+
+.exemplo div {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+
+.exemplo div:first-of-type {  /* .exemplo div:first-child - Dessa forma nao funciona pois ele pega o primeiro elemento e no nosso caso o primeiro elemento e um h3 */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.exemplo div:last-of-type {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

@@ -3,20 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Seletor de Primeiro e Ultimo Elemento</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../04_seletores_e_css3/07_seletor_pelo_atributo(2-2)/index.html">Aula anterior - Seletores de atributo (2/2)</a>
+        <a href="../../04_seletores_e_css3/09_seletor_d_prmeira_letra_e_primeira_linha/index.html">Aula anterior - Seletores de atributo Primeira Letra e Primeira Linha</a>
 
         <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: </h1>
+        <h3>Primeiro Elemento ou Ultimo de cada Area</h3>
+
+        <section>
+            <h3>Intro</h3>
+            <p>
+                Iremos ver um exemplo de uso. Nesse exemplo colaremos bordas arredondadas para que conseguirmos ver um item continuo mesmo tendo <strong>4 divs</strong> ou seja, iremos arredondar as duas bordas de cima e as duas de baixo. Para isso ficara da seguinte forma:
+            </p>
+            <p>
+                <strong>div:first-child { /* .exemplo div:first-child - Dessa forma nao funciona pois ele pega o primeiro elemento e no nosso caso o primeiro elemento e um h3 */ <br> 
+                <br>
+                }</strong> <br> <br>
+
+                Foi usado da seguinte forma: <strong>.exemplo div:first-of-type</strong> dessa forma ele ignorou nosso h3 por estar em primeiro. <br> <br>
+
+                Com isso ira pegar a primeira item que no caso e a div. Diferente da aula passada nao usamos o dois pontos duas vezes <strong>(::)</strong> isso porque nao estamos tratando do conteudo do elemento, mas do proprio elemento. Entao quando fazemos dessa forma as alteracoes seram na propria div e nao no conteudo da div.
+            </p>
+            <p>
+                Para fazer no bottom fizemos da mesma forma:
+            </p>
+            <p>
+                <strong>
+                    .exemplo div:last-of-type { <br>
+                    border-bottom-left-radius: 20px; <br>
+                    border-bottom-right-radius: 20px; <br>
+                    }
+                </strong>
+            </p>
+            <p>
+                O certo pela aula seria <strong>.exemplo div:last-chield</strong> mas da forma que foi feita, se houver outro elemento fora oque queremos em ultimo como um < p > ele ira ignorar e pegar a div.
+            </p>
+        </section>
+
+        <section class="exemplo">
+            <h3>Exemplo:</h3>
+
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+
+            <p>
+                Esse paragrafo foi feito para mostrar o uso do <strong>last-of-type</strong>.
+            </p>
+        </section>
 
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../11_seletor_negativo/index.html" id="next">Proxima aula - Seletor Negativo</a>
 
     </div>
 
