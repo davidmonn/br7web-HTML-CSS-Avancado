@@ -3,20 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Seletor de primeira letra e primeira linha</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../04_seletores_e_css3/07_seletor_pelo_atributo(2-2)/index.html">Aula anterior - Seletores de atributo (2/2)</a>
+        <a href="../../04_seletores_e_css3/08_seletor_d_elemento_vazio/index.html">Aula anterior - Seletor de elemento vazio</a>
 
-        <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: </h1>
+        <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: Seletor de primeira letra e primeira linha</h1>
+
+        <section>
+            <h3>Intro</h3>
+            <p>
+                Quando possuimos muitos paragrafos, podemos basicamente pegar a primeira letra de cada paragrafo e aplicar um tipo de efeito. Antigamente para fazer isso era selecionado a primeira letra e adicionar por exemplo ela dentro de uma tag <strong>span</strong>, com isso o efeito era dado ao span. Hoje em dia nao precisamos mas fazer dessa maneira, ja com <strong>CSS</strong> podemos selecionar a primeira linha de cada paragrafo e aplicar as modificacoes.
+            </p>
+
+            <h3>Como fazer:</h3>
+            <p>
+                Para podermos fazer isso podemos por exemplo escolhendo a <strong>tag < p ></p></strong> e em nosso <strong>CSS</strong> ficara da seguinte forma: <br>
+                <strong>p::first-letter { <br> <br> }</strong>
+            </p>
+        </section>
+
+        <section class="ex">
+            <h2>Na pratica ficara da seguinte forma, primeira letra de cada linha:</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quaerat doloribus illum dolorum deserunt cum voluptas dolorem! Nulla voluptate voluptatem nostrum alias quisquam. Repellendus porro, recusandae commodi ex nesciunt necessitatibus.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam expedita, neque odio provident deleniti sint eligendi ut praesentium totam quasi optio, esse iste fuga. Qui necessitatibus numquam sunt laboriosam!</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore ipsum, ea, cum non maiores aut eaque molestias ad eum mollitia beatae ullam eos? Necessitatibus modi ad corrupti repellendus maxime!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima, eveniet a nam numquam quisquam iusto repellendus ea tempora aliquid voluptatem architecto harum cum magni odio commodi quo eos cupiditate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat tenetur doloremque ab doloribus iste dolor hic nemo provident aspernatur ipsa reprehenderit sed, quaerat quae placeat maiores eius rem saepe?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae asperiores dignissimos dolor vitae amet minima rem nobis, assumenda vel quisquam, architecto eveniet possimus, voluptates quaerat ut commodi voluptas modi.
+            </p>
+        </section>
+        <section>
+            <h3>Selecao da linha inteira</h3>
+            <p>
+                Assim como podemos fazer a modificacao na primeira letra de cada linha, tambem podemos fazer para a linha inteira. Ficando da seguinte forma
+            </p>
+
+            <div class="ex2">
+                <h2>Ficando da seguinte forma na linha:</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas eligendi, error adipisci sequi, exercitationem quasi illo totam voluptatibus doloremque eveniet cum asperiores, ut quam quidem non saepe quos? Libero, nulla.
+                </p>
+                <p>
+                    Ipsum ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt excepturi vero suscipit voluptatum sed iusto eveniet. Vero aliquam ratione animi suscipit, fugiat iste, sapiente omnis natus incidunt magnam ipsa.
+                </p>
+                <p>
+                    Teste, ipsum dolor sit amet consectetur adipisicing elit. Maiores, hic quis rerum doloremque saepe adipisci quidem incidunt odit voluptas enim fugiat repellat, ipsum ullam voluptates tenetur quasi vero. Aliquid, minima!
+                </p>
+            </div>
+
+        </section>
 
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../10_seletor_d_primeiro_e_ultimo_elemento/index.html" id="next">Proxima aula - Seletor de Primeiro e Ultimo Elemento</a>
 
     </div>
 

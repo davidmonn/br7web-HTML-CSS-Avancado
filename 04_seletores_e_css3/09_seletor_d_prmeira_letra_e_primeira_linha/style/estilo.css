@@ -341,3 +341,19 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+
+/* PRIMEIRA LINHA DE CADA PARAGRAFO */
+
+ .ex p::first-letter {
+    font-size: 29px;
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+/* LINHA INTEIRA */
+
+.ex2 p::first-line {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: yellow;
+    font-weight: bolder;
+}
