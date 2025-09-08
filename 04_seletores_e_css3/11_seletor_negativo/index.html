@@ -10,16 +10,49 @@
 
     <div id="main">
 
-        <a href="../../04_seletores_e_css3/07_seletor_pelo_atributo(2-2)/index.html">Aula anterior - Seletores de atributo (2/2)</a>
+        <a href="../../04_seletores_e_css3/10_seletor_d_primeiro_e_ultimo_elemento/index.html">Aula anterior - Seletor de Primeiro e Ultimo Elemento</a>
 
         <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: Seletor de elemento vazio</h1>
 
         <section>
             
             <h3>Intro</h3>
+            <p>
+                Nessa aula iremos ver um dos unicos itens em que colocamos os dois pontos (:) antes de qualquer coisa, que no caso e o <strong>Seletor Negativo</strong>, nele selecionamos todos, menos o conteudo especificado, ou seja, o conteudo que receber o <strong>seletor negativo</strong>, nao ira ser modificacoes.
+            </p>
             
 
         </section>
+        <section class="exemplo">
+            <h3>Exemplo:</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, neque? Nisi repellendus voluptate nihil laboriosam maxime ratione, repudiandae facere voluptas aliquid, provident delectus neque soluta nostrum eaque animi quae aspernatur?
+            </p>
+            <p class="ex">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa impedit expedita, aliquam corporis maxime in delectus alias accusantium totam? Consequatur optio earum eaque harum neque cum incidunt quam dolore. Totam?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sunt, consequuntur, dicta excepturi in omnis dolorem eaque eveniet, illum a quidem. Quo, fugiat veniam nisi ipsam voluptates voluptatem at nam!
+            </p>
+        </section>
+
+        <div class="resum">
+
+            <p>
+                Com isso ficou da seguinte forma em nosso <strong>CSS</strong>:
+            </p>
+            <p>
+                <strong>
+                    body :not(.ex, .resum, strong) { <br>
+                    background-color: rgba(248, 56, 56, 0.499); <br>
+                    }
+                </strong>
+            </p>
+            <p>
+                Dessa forma ao colocarmos o <strong>body</strong> antes do dois pontos para excluir o body, selecionando apenas oque estiever dentro do <strong>body</strong>
+            </p>
+
+        </div>
 
 
 

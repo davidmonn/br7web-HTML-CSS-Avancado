@@ -341,16 +341,3 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
-
-.exemplo p {
-    background-color: white;
-}
-
-
-body :not(.ex, .resum, strong) {
-    background-color: rgba(248, 56, 56, 0.499);
-}
-
-.resum p {
-    background-color: white;
-}
