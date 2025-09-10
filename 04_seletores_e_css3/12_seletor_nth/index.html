@@ -3,27 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Seletor NTH</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../">Aula anterior - </a>
+        <a href="../../04_seletores_e_css3/11_seletor_negativo/index.html">Aula anterior - Seletor Negativo</a>
 
-        <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: Seletor de elemento vazio</h1>
+        <h1 id="title">Seletor NTH</h1>
 
         <section>
             
             <h3>Intro</h3>
-            
+            <p>
+                Aqui iremos ver como selecionarmos, itens especificos, independente dele estar em primeiro, no meio ou ultimo. Para isso usamos um seletor <strong>NTH</strong>, nela possui algumas variacoes.
+            </p>
 
+        </section>
+
+        <section class="explicacao">
+            <h3>Como funciona NTH:</h3>
+            <p>
+                Supondo que temos 5 divs, e queremos escolher apenas a segunda para ser modificada sem precisar dar uma class ou id para ela, podemos usar o <strong>NTH</strong>, a seguinte forma por exemplo: 
+            </p>
+            <h3>Exemplo 1 - nth-child</h3>
+            <p>
+                <strong>
+                    div:nth-child(2){ <br>
+                    background-color: green; <br>
+                    } <br>
+                </strong>
+                Com isso sera selecionado apenas a segunda div.
+            </p>
+
+            <h3>Exemplo 2 - nth:last-child</h3>
+            <p>
+                Tambem temos outras opcoes com o <strong>NTH</strong>, como selecionarmos contando de baixo para cima, como exemplo iremos selecionar a div 4:
+            </p>
+            <p>
+                <strong>
+                    div:nth-last-chiel (2){ <br>
+                        background-color: yellow-green;
+                    } <br>
+                </strong>
+                Podemos observar que selecionou a div 4, comecando a contagem da <strong>div 5</strong>
+            </p>
+            
+        </section>
+
+        <section class="exemplo">
+            <div>
+                Texto 1
+            </div>
+            <div>
+                Texto 2
+            </div>
+            <div>
+                Texto 3
+            </div>
+            <div>
+                Texto 4
+            </div>
+            <div>
+                Texto 5
+            </div>
         </section>
 
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../13_seletor_before_after(1-2)/index.html" id="next">Proxima aula - Seletor Before/After (1/2)</a>
 
     </div>
 

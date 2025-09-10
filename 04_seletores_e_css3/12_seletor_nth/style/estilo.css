@@ -341,3 +341,11 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+
+.exemplo div:nth-child(2) {
+    background-color: goldenrod;
+}
+
+.exemplo div:nth-last-child(2) {
+    background-color: yellowgreen;
+}
