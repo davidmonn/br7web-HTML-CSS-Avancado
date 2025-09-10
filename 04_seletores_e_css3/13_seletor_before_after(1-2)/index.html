@@ -3,27 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Seletor Before/Aftere (1/2)</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../">Aula anterior - </a>
+        <a href="../../04_seletores_e_css3/12_seletor_nth/index.html">Aula anterior - Seletor NTH</a>
 
-        <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: Seletor de elemento vazio</h1>
+        <h1 id="title">Seletor Before/Aftere (1/2)</h1>
 
         <section>
             
             <h3>Intro</h3>
-            
+            <p>
+                Esse e um dos seletores mais usados do CSS Avancado. Ele e um seletor com uma grande gama de possibilidades, aqui iremos ver seu funcionamento e como usa-lo.
+            </p>
 
+        </section>
+
+        <section class="explicacao">
+
+            <p>
+                <strong>before:</strong> Insere conteúdo antes do conteúdo real de um elemento. Sempre precisa da propriedade content. Pode ser usado para adicionar texto, ícones ou até formas decorativas.
+            </p>
+            <p>
+                <strong>after:</strong> Insere conteúdo depois do conteúdo real de um elemento. Também precisa da propriedade content. Útil para enfeites, símbolos de fechamento, animações etc.
+            </p>
+
+            <h3>Uso:</h3>
+            <ul>
+                <li>
+                    Design e UI: criar efeitos decorativos (setas em tooltips, triângulos em menus, sobreposições).
+                </li>
+                <li>
+                    Botões e links: adicionar ícones, animações de underline, destaques ao passar o mouse.
+                </li>
+                <li>
+                    Layout sem HTML extra: evitar colocar div desnecessária só para estilizar, usando ::before ou ::after no lugar.
+                </li>
+                <li>
+                    Animações modernas: efeitos de loading, destaques em títulos, bordas animadas.
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="exemplo">
+
+            <h3>Exemplo before:</h3>
+            <div>
+                <span>Texto 1</span> <br>
+            </div>
+
+        </section>
+
+        <section class="dica">
+            <h3>Dica:</h3>
+            <p>
+                Podemos tambem criar por exemplo um quadrado apenas usando o after ou before, mas temos que lembrar de o colocarmos como <strong>display:block;</strong> pois por padrao ele vem como <strong>display: inline;</strong> e nao adianta darmos um <strong>width</strong> e <strong>height</strong>, para um display: inline;
+            </p>
+            <p>
+                Ex:
+            </p>
+            <div class="teste">
+                <span>Texto 2</span>
+            </div>
+            <p>
+                CSS:
+            </p>
+            <p>
+                <strong>
+                        .dica .teste span::before { <br>
+                        content: ""; <br>
+                        display: inline-block; <br>
+                        height: 14px; <br>
+                        width: 14px; <br>
+                        /* border-radius: 50%; */ <br>
+                        background-color: blue; <br>
+                        margin-right: 5px; <br>
+                    }
+                </strong>
+            </p>
+        </section>
+
+        <section class="resumo">
+            <h3>Importante</h3>
+            <p>
+                Resumindo quando fazemos isso, criamos um elemento antes de nosso elemento <strong>span</strong>, nao e obrigatorio apenas com span, mas foi o usado para selecionar no exemplo. Quando nao usamos Before ou After, temos apenas o <strong>span</strong>, agora quando usamos um dos dois, e basicamente criado um novo elemento, antes ou depois do elemento selecionado com after/before.
+            </p>
+            <p>
+                Sempre que usamos o <strong>after</strong> ou <strong>before</strong>, ele deve ser acompanhado de um <strong>content</strong>
+            </p>
         </section>
 
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../14_seletor_before_after(2-2)/index.html" id="next">Proxima aula - Seletor Before/After (2/2)</a>
 
     </div>
 

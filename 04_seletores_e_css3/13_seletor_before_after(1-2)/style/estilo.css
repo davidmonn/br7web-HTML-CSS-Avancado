@@ -341,3 +341,34 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+
+.exemplo div {
+    text-align: center;
+}
+
+.exemplo div span::before {
+    content: "usando before >>>";
+    text-shadow: 2px 7px 4px black;
+    color: red;
+    font-weight: bolder;
+}
+
+.exemplo div span::after {
+    content: "<<< usando after";
+    color: red;
+    font-weight: bolder;
+}
+
+.dica .teste {
+    text-align: center;
+}
+
+.dica .teste span::before {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    /* border-radius: 50%; */
+    background-color: blue;
+    margin-right: 5px;
+}
