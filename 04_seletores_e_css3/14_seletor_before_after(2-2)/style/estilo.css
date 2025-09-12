@@ -341,3 +341,50 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+
+.exemplo .balao {
+    background-color: blue;
+    display: inline-block; /* Para pegar apenas o espaco do texto */
+    color: #FFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.balao::after {
+    content: "";
+    /* height: 20px;
+    width: 20px; */
+    /* background-color: blue; */
+    display: block;
+    position: absolute; /* Fazemos isso para que possa ficar flutuante e nao ocupar mais espaco, ou seja, nao contara o padding */
+    margin-top: 20px;
+    
+    border: 20px solid;
+    border-color: #0000FF transparent transparent  transparent;
+}
+
+.explicacao {
+    padding: 20px;
+}
+
+.explicacao .teste {
+    background-color: red;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    padding-bottom: ;
+}
+
+.teste::after {
+    content: "";
+    /* background-color: red;
+    height: 20px;
+    width: 20px; */
+    display: block;
+    margin-top: 20px;
+    padding-bottom: ;
+    
+    position: absolute;
+    border: 20px solid;
+    border-color: red blue yellowgreen gray;
+}

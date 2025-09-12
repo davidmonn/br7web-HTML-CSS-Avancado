@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Seletor Before/After (2/2)</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../">Aula anterior - </a>
+        <a href="../../04_seletores_e_css3/13_seletor_before_after(1-2)/index.html">Aula anterior - Seletor Before/After (1/1)</a>
 
-        <h1 id="title">04 Modulo: Seletores e CSS 3 - Aula: Seletor de elemento vazio</h1>
+        <h1 id="title">Seletor Before/After (2/2)</h1>
 
         <section>
             
             <h3>Intro</h3>
+            <p>
+                Agora que entendemos o funcionamento o <strong>before/after</strong>, iremos aplica-lo em um exemplo real como em um balao com setinha
+            </p>
             
+        </section>
 
+        <section class="exemplo">
+            <div class="balao">
+                Seja bem vindo
+            </div>
+        </section>
+
+        <section class="explicacao">
+
+            <p>
+                Como podemos oberservar fizemos um balao, quando queremos selecionar coisas abaixo ou na esquerda, normalmente colocamos com o <strong>before</strong>. E para direita ou acima <strong>after</strong>.
+            </p>
+            <p>
+                Para criarmos a setinha, criamos um efeito com uma tecnica de CSS, podemos comecar criando um quadrado e o posicionando no local certo e depois podemos fazer ele virar uma setinha. Para remover ele e posicionar podemos dar um position absolute para dar efeito de ser apenas uma coisa e nao ficar criando mais espaco no padding e um margin-top do tamanho que colocamos o quadrado que sera a perninha, no caso 20px.
+            </p>
+            <p>
+                Apos ver que esta tudo certo, podemos remover o background-color, height e width e adicionar um border com 20px solid e depois um border-color, pois o border color que fara o feito da perinha, pois ficara da seguinte forma: <strong>border-color: blue transparent transparent transparent; feito isso da o efeito que queremos</strong>. Obs: Tudo esta sendo configurado nessa parte ja em nosso seletor <strong>after</strong>.
+            </p>
+            <p>
+                <strong>Demonstracao do border-color:</strong>
+            </p>
+
+            <div class="teste">
+                Exemplo
+            </div>
+
+            <br> <br> <br>
+
+            <p>
+                O bom dessa tecninca, e mesmo que o texto va crescendo, ele vai se adaptando automatco
+            </p>
+            
         </section>
 
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../15_RGBA/index.html" id="next">Proxima aula - RGBA</a>
 
     </div>
 
