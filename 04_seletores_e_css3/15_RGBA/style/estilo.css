@@ -348,11 +348,11 @@ a[href$="teste"] {
 .teste {
     margin: auto;
     background-color: #0000004a;
-    color: white;
+    color:white;
 
     /* Colar a div em todos os cantos */
     position: fixed;
-    left: 0;
+    /* left: 0; */
     top: 0;
     right: 0;
     bottom: 0;
