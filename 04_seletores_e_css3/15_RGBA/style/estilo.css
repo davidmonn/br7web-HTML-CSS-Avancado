@@ -7,13 +7,16 @@
 /*Var*/
 :root {
     --bd-color: rgba(0, 0, 255, 0.388);
-    --main-color: aqua;
+    --main-color: rgba(0, 255, 255, 0.202);
     --h-color: rgba(0, 0, 255, 0.521);
     --font-p: 17px;
 }
 
 body {
     background-color: var(--bd-color);
+    background-image: url(../img/teste.jpg);
+    background-size: cover;
+    background-position: center;
     max-width: 750px;
     margin: 20px auto;
 }
@@ -252,7 +255,7 @@ img {
     }
 
     #main {
-        background-color: aqua;
+        background-color: rgba(255, 255, 255, 0.788);
     }
 }
 
@@ -340,4 +343,17 @@ input[name="nome"] {
 
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
+}
+
+.teste {
+    margin: auto;
+    background-color: #0000004a;
+    color: white;
+
+    /* Colar a div em todos os cantos */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
