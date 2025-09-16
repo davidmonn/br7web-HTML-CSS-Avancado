@@ -341,3 +341,13 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+
+.teste {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+
+    transform: scale(0.7);
+}
