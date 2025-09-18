@@ -341,3 +341,78 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+
+.exemplo {
+    padding-bottom: 40px;
+}
+
+.teste {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+
+    transform: scale(0.7);
+}
+
+.teste2 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+
+    transform: rotate(30deg);
+}
+
+.exemplo2 {
+    padding-bottom: 500px;
+}
+
+.exemplo2 h3 {
+    margin-bottom: 80px;
+}
+
+.teste3 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    transform: rotate(90deg);
+}
+
+.teste4 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+
+    transform: skewX(20deg);
+}
+
+.teste5 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: 50px auto;
+
+    transform: skewY(30deg);
+}
+
+.teste6 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: 50px auto;
+
+    transform: skew(10deg, 15deg);
+}
