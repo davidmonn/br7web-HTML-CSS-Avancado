@@ -3,27 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Box Sizing</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../">Aula anterior - </a>
+        <a href="../../04_seletores_e_css3/17_transform_(2-2)/index.html">Aula anterior - Transform (2/2)</a>
 
-        <h1 id="title"></h1>
+        <h1 id="title">Box Sizing</h1>
 
         <section>
             
             <h3>Intro</h3>
+            <p>
+                O <strong>Box Sizing</strong>, veio para resolver um grande problema onde muitos acabam se deparando com ele, e so era possivel solucionar esse problema de formas complicadas com "gambiarras"
+            </p>
+
+            <h3>Importante:</h3>
+            <p>
+                Temos alguns valores para <strong>box-sizing</strong>:
+            </p>
             
+            <ul>
+                <li>
+                    <strong>box-sizing: content-box;</strong> valor padrao, tem o tamanho da caixa de acordo com o tamanho do conteudo. Basicamente o tamanho de altura e largura que defirmos sera o tamanho do conteudo, porem nao inclui <strong>padding, margin e border </strong>
+                </li>
+                <li>
+                    <strong>box-sizing:border-box;</strong> ele inclui tambem o <strong>padding e border</strong> ao tamanho de nosso conteudo, apenas nao o <strong>margin</strong> pois ele é um item externo
+                </li>
+                <li>
+
+                </li>
+            </ul>
+
+            <p>
+                Muitos desenv utilizam o <strong>box-sizing</strong> de forma geral no site, parra evitar problemas ficando *{box-sizing: border-box;}
+            </p>
+            
+
+        </section>
+
+        <section class="ex">
+
+            <h3>Exemplo:</h3>
+            <p>
+                Quando criamos uma div, temos algumas formas de ver o tamanho do elemento, podemos inspecionar por meio do <strong>computed</strong> ao apertar <strong>f12</strong> no Chrome, ira aparecer de formma detalhada o tamanho do elemento. Ou podemos ir em styles e ao passar o mouse pelo elemento e clicar, ira abrir as informacoes desse elemento. Se no caso adicionarmos um <strong>border: 10px solid red;</strong> entao ele tera <strong>220 de width</strong> e <strong>220 de hieght</strong> pois estaremos fazendo a soma dos lados e se quisermos um tamanho especifico, poderemos ter alguns problemas sem o uso do <strong>box sizing</strong>
+            </p>
+            <p>
+                Entao quando queriamos um elemento com tamanhos certos, tinhamos que fazer a soma, por exemplo: foi feito um quadrado de 200x200 (width e height), ao adicionarmos um border de 10px, o valor de nosso elemento tera ultrapassado os 200px sendo 220px width e 220px height, para nao ultrapassarmos teriamos que fazer 180x180. Para resolvermos isso usamos o <strong>box-sizing</strong>.
+            </p>
+
+            <h3>Exemplo:</h3>
+            <p>
+                Ambos possuem os meus valores de height, witdh e padding, mas com diferentes box-sizing:
+            </p>
+            
+            <div class="cont-test">
+                <div class="teste">
+                    Sem box-sizing
+                </div>
+                <div class="teste2">
+                    Com box-sizing
+                </div>
+            </div>
 
         </section>
 
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../../04_seletores_e_css3/19_estilizar_placeholder/index.html" id="next">Proxima aula - Estilizar placeholder</a>
 
     </div>
 

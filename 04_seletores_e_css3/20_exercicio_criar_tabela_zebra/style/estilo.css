@@ -341,31 +341,3 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
-
-.cont-test {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.ex .teste {
-    /* display: flex; */
-    background-color: green;
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-    border: 10px solid red;
-
-    box-sizing: content-box;
-}
-
-.ex .teste2 {
-    /* display: flex; */
-    background-color: green;
-    width: 200px;
-    height: 200px;
-    border: 10px solid red;
-    padding: 5px;
-
-    box-sizing: border-box;
-}
