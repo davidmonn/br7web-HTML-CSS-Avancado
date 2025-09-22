@@ -341,27 +341,3 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
-
-table {
-    margin: auto;
-}
-
-table th {
-    text-align: center;
-    font-size: 19px;
-    font-weight: bolder;
-}
-
-table tr, td {
-    border: 1px solid black;
-    padding: 5px;
-    text-align: center;
-}
-
-table th {
-    background-color: coral;
-}
-
-table tr:nth-child(odd) {
-    background-color: rgba(255, 0, 0, 0.512);
-}
