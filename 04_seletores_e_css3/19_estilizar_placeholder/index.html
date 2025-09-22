@@ -5,25 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="style/estilo_placeholder.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../">Aula anterior - </a>
+        <a href="../../04_seletores_e_css3/18_box_sizing/index.html">Aula anterior - Box Sizing</a>
 
         <h1 id="title"></h1>
 
         <section>
             
             <h3>Intro</h3>
+            <p>
+                Aqui iremos ver como modificar um <strong>placeholder</strong> de um input, como por exemplo conseguir alterar a cor que fica o placeholder.
+            </p>
+            <p>
+                Para fazermos isso iremos precisar de um outro CSS, isso pois nao iremos estilizar o <strong>input</strong> mas um conteudo dentro do <strong>input</strong>, entao para isso iremos precisar de uma outra pagina CSS
+            </p>
+
+            <p>
+                Tem formas diferentes de selecionarmos um placeholder, dependendo do navegador usado.
+            </p>
+
+            <h3>Navegadores Modernos</h3>
+            <p>
+                <strong>
+                    input::placeholder {color: red;}
+                </strong>
+            </p>
+            <p>
+                <strong>Obs:</strong> <strong>input::placeholder</strong> podemos tambem fazer selecao de um item especifico ex:
+            </p>
+
+            <codigo>
+                <strong>
+                    <span>input</span>[type=text]::placeholder { <br>
+                    color: blue; <br>
+                    }
+                </strong>
+            </codigo>
+
+            <h3>Para webkit, blink e edge</h3>
+            <p>
+                Navegadores que usam <strong>webkit</strong> podem ser feitos da seguinte forma: <strong>input::-webkit-input-placeholder {color: red;}</strong>
+            </p>
+
+            <h3>Firefox da verao 4 ao 18</h3>
+            <p>
+                <strong>
+                    input:-moz-placeholder {color: red;}
+                </strong>
+            </p>
             
+            <h3>Firefox 19+</h3>
+            <p>
+                <strong>
+                    input::-moz-placeholder {color: red;}
+                </strong>
+            </p>
+
+            <h3>Internet Explorer versao 10 e 11</h3>
+            <p>
+                <strong>
+                    input:-ms-placeholder {color: red;}
+                </strong>
+            </p>
+
+            <h3>Microsoft Edge</h3>
+            <p>
+                <strong>
+                    input::-ms-placehoder {color: red;}
+                </strong>
+            </p>
+
+        </section>
+
+        <section class="input-test">
+
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Input Test</legend>
+                    <label>Nome:
+                        <input type="text" placeholder="Nome:">
+                    </label>
+                    <label>Email:
+                        <input type="email" placeholder="Email:">
+                    </label>
+                    <label> Data de Nascimento
+                        <input type="date">
+                    </label>
+                    <label> Observacoes:
+                        <textarea name="" id="" placeholder="Fale sob voce"></textarea>
+                    </label>
+                </fieldset>
+            </form>
 
         </section>
 
 
 
-    <a href="../" id="next">Proxima aula - </a>
+    <a href="../../04_seletores_e_css3/20_exercicio_criar_tabela_zebra/index.html" id="next">Proxima aula - Exercicio Criar Tabela Zebra</a>
 
     </div>
 

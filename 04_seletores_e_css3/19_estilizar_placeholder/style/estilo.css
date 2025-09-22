@@ -310,7 +310,7 @@ img {
 }
 
 
-a[href^="http:"] {
+/* a[href^="http:"] {
     background-color: bisque;
 }
 
@@ -324,13 +324,13 @@ a[href*="brasil"] {
 
 a[href*="tecnologia"] {
     background-color: rgba(5, 89, 89, 0.535);
-}
+} */
 
 input, a {
     display: block; /* Para ficar cada um em sua linha */
 }
 
-[required] {
+/* [required] {
     background-color: rgba(98, 255, 0, 0.525);
 }
 
@@ -340,4 +340,22 @@ input[name="nome"] {
 
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
+} */
+
+codigo span{
+    color: red;
+}
+
+input[type="text"] {
+    width: 400px;
+    height: 50px;
+    font-size: 27px;
+}
+
+/* input::placeholder {
+    color: red;
+} */
+
+input[type=text]::-webkit-input-placeholder {
+    color: red;
 }
