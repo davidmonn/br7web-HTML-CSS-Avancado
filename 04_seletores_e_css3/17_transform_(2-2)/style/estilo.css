@@ -414,5 +414,5 @@ a[href$="teste"] {
     padding: 10px;
     margin: 50px auto;
 
-    transform: skew(10deg, 15deg);
+    transform: rotate(10deg, 15deg);
 }

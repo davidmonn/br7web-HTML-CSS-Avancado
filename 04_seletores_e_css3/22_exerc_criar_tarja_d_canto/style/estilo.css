@@ -341,3 +341,26 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
+/* 
+.exercicio {
+    
+} */
+
+
+.ex {
+    background-color: var(--bd-color);
+    color: white;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 0px 3px black;
+    box-shadow: 1px 0px 3px black;
+    width: 420px;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 200px;
+    left: -60px;  /* joga um pouco para fora */
+    transform: rotate(-45deg);
+    transform-origin: left top;
+}
