@@ -341,29 +341,3 @@ input[name="nome"] {
 a[href$="teste"] {
     background-color: rgb(108, 141, 141);
 }
-
-#exercicio {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 60px;
-}
-
-#exercicio .button {
-    background-color: var(--bd-color);
-    display: inline-block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    font-size: 26px;
-    margin: auto;
-    border-radius: 17px;
-    box-shadow: 1px 1px 3px black;
-    font-weight: bolder;
-    font-family: sans-serif;
-}
-
-#exercicio a:hover {
-    background-color: rgba(0, 0, 255, 0.644);
-}
