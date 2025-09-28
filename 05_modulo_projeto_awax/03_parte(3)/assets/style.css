@@ -1,0 +1,36 @@
+/*
+ .pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+}
+
+header .cont-header {
+    max-width: 1140px;
+    height: 100px;
+    background-color: red;
+    margin: auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
