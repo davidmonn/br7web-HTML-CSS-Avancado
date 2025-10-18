@@ -1,0 +1,98 @@
+/*
+ .pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+/* Padronizacao do Site */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+}
+
+header .cont-header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Logo */
+.logo {
+    width: 100px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+}
+
+
+/* Menu */
+.menu {
+    flex: 1; /*Para pegar todo o restando do espaco*/
+    display: flex;
+    justify-content: flex-end; /*Para mandarr nosso menu para a direita */
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex; /* Com isso um menu ficara ao lado do outro */
+}
+
+.menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex; /* Para conseguirmos aumentar sua altura, isso por conta da borda que iremos colocar abaixo*/
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px ;
+    height: 100px;
+    border-bottom: 5px solid black; /* Foi adicionado pois sem isso, da efeito de se mexer ao passar o mouse por conta de nosso hover no link*/
+}
+
+.menu li a:hover,
+.menu .active a  {
+    border-bottom: 5px solid #b28756;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+a .next {
+    color: purple;
+}
