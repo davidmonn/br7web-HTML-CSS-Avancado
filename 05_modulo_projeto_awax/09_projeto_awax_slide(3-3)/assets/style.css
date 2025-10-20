@@ -21,6 +21,7 @@ body {
 }
 
 
+
 /* HEADER */
 header {
     height: 100px;
@@ -144,6 +145,36 @@ header .cont-header {
     padding: 10px 30px;
     margin-top: 30px;
     border-radius: 20px;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    /* background-color: red; */
+    position: absolute;
+    margin-top:-250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner .pointer {
+    /* background-color: #000; */
+    height: 15px;
+    width: 15px;
+    margin: auto 5px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
+
+.banner .pointer a:hover {
+    background-color: #b28756;
+    /* border: 2px solid ; */
 }
 
 
