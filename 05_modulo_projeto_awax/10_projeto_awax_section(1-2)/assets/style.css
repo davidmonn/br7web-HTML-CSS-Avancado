@@ -17,7 +17,9 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden; /*Todo conteudo que ultrapasse a horizontal sera ignorado, nao gerando barra lateral*/
     /* color: #FFF; */
+    background-color: #000;
 }
 
 
@@ -177,6 +179,10 @@ header .cont-header {
     /* border: 2px solid ; */
 }
 
+/* DEFAULT */
+.default{
+    background-color: red;
+}
 
 /* FOOTER */
 footer {
@@ -187,6 +193,21 @@ footer {
     bottom: 0;
 }
 
-a .next {
+.next {
+    background-color: #000;
+    display: block;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    color: wheat;
+}
+
+.next {
+    cursor: pointer;
+    margin: 15px;
+}
+
+.next:hover {
+    transition: 0.5s;
     color: purple;
 }
