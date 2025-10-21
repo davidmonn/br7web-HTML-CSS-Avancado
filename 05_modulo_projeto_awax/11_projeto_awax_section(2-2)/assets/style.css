@@ -19,7 +19,7 @@ body {
     font-size: 13px;
     overflow-x: hidden; /*Todo conteudo que ultrapasse a horizontal sera ignorado, nao gerando barra lateral*/
     /* color: #FFF; */
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 
@@ -181,7 +181,46 @@ header .cont-header {
 
 /* DEFAULT */
 .default{
-    background-color: red;
+    padding: 50px 0 50px 0;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: #CCC;
+    margin: 10px 0 40px 0;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    min-height: 100px;
+    background-color: #CCC;
+    margin: auto;
+}
+
+/* DEFAULT TEMA (FRAMEWORK) */
+.default.light {
+    background-color: #F7F7F7;
+}
+.default.light .section-title {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+.default.dark .section-title {
+    color: #FFF;
 }
 
 /* FOOTER */
@@ -194,12 +233,13 @@ footer {
 }
 
 .next {
-    background-color: #000;
+    /* background-color: #000; */
     display: block;
     text-decoration: none;
     margin-left: 25px;
     font-size: 15px;
-    color: wheat;
+    color: purple;
+    font-weight: bolder;
 }
 
 .next {
@@ -209,5 +249,5 @@ footer {
 
 .next:hover {
     transition: 0.5s;
-    color: purple;
+    color: red;
 }
