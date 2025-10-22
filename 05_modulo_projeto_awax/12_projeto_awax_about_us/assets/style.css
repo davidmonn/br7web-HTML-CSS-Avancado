@@ -89,6 +89,19 @@ header .cont-header {
     color: #CCC;
 }
 
+.button {
+    display: inline-block; /* Aqui sera block pois precisaremos mexer com padding e algumas outras confg */
+    background-color: #b28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
 /* BANNER */
 .banner {
     height: calc(100vh - 100px); /* 100px sao do header */
@@ -137,7 +150,7 @@ header .cont-header {
 }
 
 .banner a {
-    display: block; /* Aqui sera block poisp precisaremos mexer com padding e algumas outras confg */
+    display: block; /* Aqui sera block pois precisaremos mexer com padding e algumas outras confg */
     background-color: #b28756;
     color: #FFF;
     text-transform: uppercase;
@@ -203,8 +216,6 @@ header .cont-header {
 
 .default .section-body {
     max-width: 1140px;
-    min-height: 100px;
-    background-color: #CCC;
     margin: auto;
 }
 
@@ -212,16 +223,19 @@ header .cont-header {
 .default.light {
     background-color: #F7F7F7;
 }
-.default.light .section-title {
+.default.light .section-title,
+.defaul.light .section-body {
     color: #000;
 }
 
 .default.dark {
     background-color: #000;
 }
-.default.dark .section-title {
+.default.dark .section-title,
+.default.dark .section-body {
     color: #FFF;
 }
+
 
 /* FOOTER */
 footer {
@@ -250,4 +264,33 @@ footer {
 .next:hover {
     transition: 0.5s;
     color: red;
+}
+
+
+
+
+
+
+/* CSS DE AREAS ESPECIFICAS */
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14;
+    line-height: 25px;
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
 }
