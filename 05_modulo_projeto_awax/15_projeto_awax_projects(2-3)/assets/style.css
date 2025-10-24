@@ -362,3 +362,23 @@ footer {
 .section-projects--filters li:first-child {
     border-left: 0;
 }
+
+/* PROJECTS - PHOTOS */
+.section-projects--photos {
+    /* 
+    essas duas propriedades de tamanho ajudara na responsividade, se o monitor for muito grande tera que ter um limite ou seja 1140
+    e se o monitor for menor, ele tera os 100vw, toda a area disponivel da tela.
+    */
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap; /* Para poder quebrar e ir para a proxima linha */
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+    
+}
