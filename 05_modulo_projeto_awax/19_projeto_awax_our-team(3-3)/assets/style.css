@@ -455,7 +455,8 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #FFF;
+    color: #000;
+    padding: 30px;
 }
 
 .section-team-area .sliders-pointers {
@@ -478,5 +479,44 @@ footer {
 }
 
 .section-team-area .pointer.active {
+    background-color: #b28756;
+}
+
+.section-team-avatar {
+    width: 150px;
+    height: auto;
+}
+
+.section-team-name {
+    text-transform: uppercase;   
+    font-weight: 600;
+    font-size: 17px;
+    margin: 30px 0 0 0;
+}
+
+.section-team-role {
+    font-size: 14px;
+    color: #999;
+    margin: 5px 0 0 0;
+}
+
+.section-team-social {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.section-team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #999;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px 0 0  ;
+}
+
+.section-team-social a:hover {
     background-color: #b28756;
 }
