@@ -1,0 +1,482 @@
+/*
+ .pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+/* Padronizacao do Site */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden; /*Todo conteudo que ultrapasse a horizontal sera ignorado, nao gerando barra lateral*/
+    /* color: #FFF; */
+    /* background-color: #000; */
+}
+
+
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+}
+
+header .cont-header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Logo */
+.logo {
+    width: 100px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+    border-radius: 40px;
+}
+
+
+/* Menu */
+.menu {
+    flex: 1; /*Para pegar todo o restando do espaco*/
+    display: flex;
+    justify-content: flex-end; /*Para mandarr nosso menu para a direita */
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex; /* Com isso um menu ficara ao lado do outro */
+}
+
+.menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex; /* Para conseguirmos aumentar sua altura, isso por conta da borda que iremos colocar abaixo*/
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px ;
+    height: 100px;
+    border-bottom: 5px solid black; /* Foi adicionado pois sem isso, da efeito de se mexer ao passar o mouse por conta de nosso hover no link*/
+}
+
+.menu li a:hover,
+.menu .active a  {
+    border-bottom: 5px solid #b28756;
+    color: #CCC;
+}
+
+.button {
+    display: inline-block; /* Aqui sera block pois precisaremos mexer com padding e algumas outras confg */
+    background-color: #b28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/* BANNER */
+.banner {
+    height: calc(100vh - 100px); /* 100px sao do header */
+    background-color: #999;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden; /* Usado para que tudo que passe do tamanho definido dentro dele, ira ser ignorado, assim removendo scroll lateral */
+}
+
+/*BANNER - SLIDER */
+.banner .sliders {
+    width: 1000vw; /*Aqui temos 1000, pois cada slider tem 100 e se tivermos 10 slider, entao teremos que colocar uma width de 1000*/
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slide-area {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner h1 span {
+    color: #b28756;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a {
+    display: block; /* Aqui sera block pois precisaremos mexer com padding e algumas outras confg */
+    background-color: #b28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    /* background-color: red; */
+    position: absolute;
+    margin-top:-250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner .pointer {
+    /* background-color: #000; */
+    height: 15px;
+    width: 15px;
+    margin: auto 5px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
+
+.banner .pointer a:hover {
+    background-color: #b28756;
+    /* border: 2px solid ; */
+}
+
+/* DEFAULT */
+.default{
+    padding: 50px 0 50px 0;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: #CCC;
+    margin: 10px 0 40px 0;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* DEFAULT TEMA (FRAMEWORK) */
+.default.light {
+    background-color: #F7F7F7;
+}
+.default.light .section-title,
+.defaul.light .section-body {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #FFF;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.next {
+    /* background-color: #000; */
+    display: block;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    color: purple;
+    font-weight: bolder;
+}
+
+.next {
+    cursor: pointer;
+    margin: 15px;
+}
+
+.next:hover {
+    transition: 0.5s;
+    color: red;
+}
+
+
+
+
+
+
+/* CSS DE AREAS ESPECIFICAS */
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14;
+    line-height: 25px;
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+/* SERVICES */
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #333;
+}
+
+.section-service h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+/* PROJECTS MENU */
+.section-projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-projects--filters {
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+    list-style-type: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #CCC;    
+    color: #555;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-projects--filters li:first-child {
+    border-left: 0;
+}
+
+/* PROJECTS - PHOTOS */
+.section-projects--photos {
+    /* 
+    essas duas propriedades de tamanho ajudara na responsividade, se o monitor for muito grande tera que ter um limite ou seja 1140
+    e se o monitor for menor, ele tera os 100vw, toda a area disponivel da tela.
+    */
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap; /* Para poder quebrar e ir para a proxima linha */
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects-photo-area {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects-photo-area img {
+    width: inherit; /* Para herdar o item (elemento) anterior ou seja photo area*/
+    height: inherit;
+}
+
+.section-projects-photo-info {
+    display: none; /* Para so aparecer ao passar o mouse */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-projects-photo-info h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects-photo-area:hover .section-projects-photo-info {
+    display: flex;
+}
+
+/* SECTION TEAM */
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+.bg-team {
+    background-image: url(../assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders {
+    width: 1000vw; /*Aqui temos 1000, pois cada slider tem 100 e se tivermos 10 slider, entao teremos que colocar uma width de 1000*/
+    height: 100%;
+}
+
+.section-team .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color:#FFF;
+    margin-right: 20px;
+}
+
+.section-team .slide-area {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.section-team-area .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-team-area .pointer {
+    /* background-color: #000; */
+    height: 15px;
+    width: 15px;
+    margin: auto 5px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+    background-color: #b28756;
+}
