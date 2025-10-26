@@ -414,3 +414,17 @@ footer {
 .section-projects-photo-area:hover .section-projects-photo-info {
     display: flex;
 }
+
+/* SECTION TEAM */
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+.bg-team {
+    background-image: url(../assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
