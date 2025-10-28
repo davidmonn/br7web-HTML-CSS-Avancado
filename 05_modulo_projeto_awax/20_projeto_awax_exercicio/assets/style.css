@@ -520,3 +520,166 @@ footer {
 .section-team-social a:hover {
     background-color: #b28756;
 }
+
+/* HAPPY CLIENT */
+.default .section-happy-client,
+.section-reviews {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-happy-client {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.section-reviews {
+    color: #999;
+}
+
+.section-body.avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    cursor: zoom-in;
+}
+
+.section-team-avatar.client {
+    /* cursor: zoom-in; */
+}
+
+.section-info-client {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.img-asp {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.section-desc-client {
+    max-width: 750px;
+    text-align: center;
+}
+
+/* SPONS (PATROCINADORES) */
+
+.section-spons-body {
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    box-shadow: 2px 1px 5px #ccc;
+}
+
+.section-spons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.spons-photo {
+    display: flex;
+    padding: 50px;
+}
+
+/* VALUE */
+.section-body.prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-values,
+.table-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.section-values,
+.table-value,
+.ass {
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.section-values {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.table-value {
+    color: #999;
+    margin-bottom: 50px;
+}
+
+.cont-tables {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: 300px;
+    max-width: 400px;
+    margin: 0 20px 0 20px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+}
+
+
+.value {
+    padding: 20px;
+    text-align: center;
+}
+
+.ass.type,
+.ass.offer {
+    margin-bottom: 13px;
+}
+
+.ass.offer span {
+    text-align: 11px;
+    color: #999;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed black;
+    margin: auto;
+    padding: 5px;
+    width: 10px;
+}
+
+.button.black {
+    color: #FFF;
+    background-color: #000;
+}
+
+.button.black:hover {
+    background-color: red;
+}
