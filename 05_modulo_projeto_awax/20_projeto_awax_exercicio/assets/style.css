@@ -911,12 +911,16 @@ p {
 
 .tell-about-body {
     /* background-color: red; */
+    height: 90px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 2280px;
     max-width: 100%;
-    padding: 15px;
+    padding: 10px;
+    box-shadow: 0px 0.5px 2px #999;
+    margin-bottom: 0;
 }
 
 .tell-about-body .cont-share {
@@ -926,35 +930,123 @@ p {
     width: 1140px;
 }
 
-.main-share {
-    margin-right: 5%;
-    color: #999;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.second-share {
-    width: 20px;
-    margin: 0;
-    display: block;
-    max-width: 50px;
-    margin: 15px;
-}
-
-.second-share img {
-    display: block;
-    border-radius: 50%;
-    padding: 20px;
-    width: 100%;
-    margin: 5px;
-    background-color: blue;
-}
-
-.tell-about-body figure {
+.cont-share {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1140px;
+}
+
+.cont-share figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-share .main-share {
+    margin: 50px;
+}
+
+.cont-share .main-share figcaption {
+    margin-left: 15px;
+    color: #D8D8D8;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cont-share .second-share figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.cont-share .second-share {
+    display: flex;
+    /* margin: 5px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-share .second-share img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+/* FORM CONTACT us */
+
+.contacts-body {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.cont-form {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+form fieldset {
+    border: none;
+}
+
+fieldset legend,
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin: auto;
+}
+
+fieldset legend {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+fieldset h2 {
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+form .form-padrao [type=text],
+[type=email] {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px;
+    margin: 15px;
+    border-style: none;
+    border-bottom: 2px solid #BABABA;
+}
+
+.campo-inferior input{
+    width: 94%;
+}
+
+.button.center {
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto 0 auto;
     width: 100%;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
 }
