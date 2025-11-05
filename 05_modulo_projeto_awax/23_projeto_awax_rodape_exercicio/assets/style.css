@@ -1,0 +1,1181 @@
+/*
+ .pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+/* Padronizacao do Site */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden; /*Todo conteudo que ultrapasse a horizontal sera ignorado, nao gerando barra lateral*/
+    /* color: #FFF; */
+    /* background-color: #000; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+}
+
+header .cont-header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Logo */
+.logo {
+    width: 100px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+    border-radius: 40px;
+}
+
+
+/* Menu */
+.menu {
+    flex: 1; /*Para pegar todo o restando do espaco*/
+    display: flex;
+    justify-content: flex-end; /*Para mandarr nosso menu para a direita */
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex; /* Com isso um menu ficara ao lado do outro */
+}
+
+.menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    display: flex; /* Para conseguirmos aumentar sua altura, isso por conta da borda que iremos colocar abaixo*/
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    border-bottom: 5px solid black; /* Foi adicionado pois sem isso, da efeito de se mexer ao passar o mouse por conta de nosso hover no link*/
+}
+
+.menu li a:hover,
+.menu .active a  {
+    border-bottom: 5px solid #b28756;
+    color: #CCC;
+}
+
+.button {
+    display: inline-block; /* Aqui sera block pois precisaremos mexer com padding e algumas outras confg */
+    background-color: #b28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/* BANNER */
+.banner {
+    height: calc(100vh - 100px); /* 100px sao do header */
+    background-color: #999;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden; /* Usado para que tudo que passe do tamanho definido dentro dele, ira ser ignorado, assim removendo scroll lateral */
+}
+
+/*BANNER - SLIDER */
+.banner .sliders {
+    width: 1000vw; /*Aqui temos 1000, pois cada slider tem 100 e se tivermos 10 slider, entao teremos que colocar uma width de 1000*/
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slide-area {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner h1 span {
+    color: #b28756;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a {
+    display: block; /* Aqui sera block pois precisaremos mexer com padding e algumas outras confg */
+    background-color: #b28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    /* background-color: red; */
+    position: absolute;
+    margin-top:-250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner .pointer {
+    /* background-color: #000; */
+    height: 15px;
+    width: 15px;
+    margin: auto 5px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
+
+.banner .pointer a:hover {
+    background-color: #b28756;
+    /* border: 2px solid ; */
+}
+
+/* DEFAULT */
+.default{
+    padding: 50px 0 50px 0;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: #CCC;
+    margin: 10px 0 40px 0;
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* DEFAULT TEMA (FRAMEWORK) */
+.default.light {
+    background-color: #F7F7F7;
+}
+.default.light .section-title,
+.defaul.light .section-body {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #FFF;
+}
+
+
+/* FOOTER */
+/* footer {
+    background-color: #000;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+} */
+
+.next {
+    /* background-color: #000; */
+    display: block;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    color: purple;
+    font-weight: bolder;
+}
+
+.next {
+    cursor: pointer;
+    margin: 15px;
+}
+
+.next:hover {
+    transition: 0.5s;
+    color: red;
+}
+
+
+
+
+
+
+/* CSS DE AREAS ESPECIFICAS */
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14;
+    line-height: 25px;
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+/* SERVICES */
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #333;
+}
+
+.section-service h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+/* PROJECTS MENU */
+.section-projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-projects--filters {
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+    list-style-type: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #CCC;    
+    color: #555;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-projects--filters li:first-child {
+    border-left: 0;
+}
+
+/* PROJECTS - PHOTOS */
+.section-projects--photos {
+    /* 
+    essas duas propriedades de tamanho ajudara na responsividade, se o monitor for muito grande tera que ter um limite ou seja 1140
+    e se o monitor for menor, ele tera os 100vw, toda a area disponivel da tela.
+    */
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap; /* Para poder quebrar e ir para a proxima linha */
+    justify-content: center;
+}
+
+.section-projects--photo {
+    width: 280px;
+}
+
+.section-projects-photo-area {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects-photo-area img {
+    width: inherit; /* Para herdar o item (elemento) anterior ou seja photo area*/
+    height: inherit;
+}
+
+.section-projects-photo-info {
+    display: none; /* Para so aparecer ao passar o mouse */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-projects-photo-info h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects-photo-area:hover .section-projects-photo-info {
+    display: flex;
+}
+
+/* SECTION TEAM */
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+.bg-team {
+    background-image: url(../assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders {
+    width: 1000vw; /*Aqui temos 1000, pois cada slider tem 100 e se tivermos 10 slider, entao teremos que colocar uma width de 1000*/
+    height: 100%;
+}
+
+.section-team .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color:#FFF;
+    margin-right: 20px;
+}
+
+.section-team .slide-area {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    padding: 30px;
+}
+
+.section-team-area .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-team-area .pointer {
+    /* background-color: #000; */
+    height: 15px;
+    width: 15px;
+    margin: auto 5px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+    background-color: #b28756;
+}
+
+.section-team-avatar {
+    width: 150px;
+    height: auto;
+}
+
+.section-team-name {
+    text-transform: uppercase;   
+    font-weight: 600;
+    font-size: 17px;
+    margin: 30px 0 0 0;
+}
+
+.section-team-role {
+    font-size: 14px;
+    color: #999;
+    margin: 5px 0 0 0;
+}
+
+.section-team-social {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.section-team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #999;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px 0 0  ;
+}
+
+.section-team-social a:hover {
+    background-color: #b28756;
+}
+
+/* HAPPY CLIENT */
+.default .section-happy-client,
+.section-reviews {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-happy-client {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.section-reviews {
+    color: #999;
+}
+
+.section-body.avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    cursor: zoom-in;
+}
+
+
+.section-info-client {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.img-asp {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.section-desc-client {
+    max-width: 750px;
+    text-align: center;
+}
+
+/* SPONS (PATROCINADORES) */
+
+.section-spons-body {
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    box-shadow: 2px 1px 5px #ccc;
+}
+
+.section-spons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.spons-photo {
+    display: flex;
+    padding: 50px;
+}
+
+/* VALUE */
+
+.default.light.offer {
+    box-shadow: 1px 1px 1px #CCC;
+}
+.section-body.prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-values,
+.table-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.section-values,
+.table-value,
+.ass {
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.section-values {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.table-value {
+    color: #999;
+    margin-bottom: 50px;
+}
+
+.cont-tables {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: 300px;
+    max-width: 400px;
+    margin: 0 20px 0 20px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    height: 100%;
+}
+
+
+.value {
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.value ul li.title {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.value ul li {
+    list-style: none;
+    margin: auto;
+}
+
+.ass.type,
+.ass.offer {
+    margin-bottom: 13px;
+}
+
+.ass.offer .price-plan {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ass.offer span {
+    text-align: 11px;
+    color: #999;
+}
+
+.value ul li.line {
+    width:2px;
+}
+
+.line {
+    border-bottom: 1px dashed black;
+    margin: 30px;
+    padding: 5px;
+    width: 5px;
+}
+
+.desc-color-offer {
+    font-size: 10px;
+    color: #555;
+    font-weight: 600;
+}
+
+.button.black {
+    color: #FFF;
+    background-color: #000;
+}
+
+.button.black:hover {
+    background-color: red;
+}
+
+/* PICTURE OFFER */
+.picture-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    /* max-width: 1140px; */
+    /* background-color: #955050; */
+}
+
+.picture-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-picture {
+    text-align: center;
+}
+
+.title-picture p {
+    color: #999;
+}
+
+.picture-offer .title h1{
+    margin: 45px 0 15px 0;
+}
+
+.picture-offer .title-picture p {
+    margin-bottom: 80px;
+}
+
+.cont-picture-offer {
+    display: flex;
+    flex-direction: row;
+    /* max-height: 420px; */
+    /* background-color: red; */
+}
+
+
+.picture-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    /* background-color: wheat; */
+    max-width: 490px;
+    padding: 5px;
+    color: #999;
+}
+
+.cont-title-check {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    width: 17px;
+}
+
+.cont-picture-offer .book {
+    display: block;
+    /* width: 420px; */
+    /* height: 420px; */
+    margin-right: 90px;
+}
+
+.group-1 {
+    display: flex;
+    /* flex: 1; */
+}
+
+.picture-desc figure {
+    margin-bottom: 25px;
+}
+
+.picture-desc figure, figcaption {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.picture-desc figcaption {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    font-size: 27px;
+    margin-left: 30px;
+}
+
+figure p {
+    text-align: left;
+}
+
+.picture-desc p, ul li {
+    /* margin-top: 15px; */
+    line-height: 20px;
+    margin-left: 65px;
+
+}
+
+.picture-desc ul li {
+    list-style: none;
+}
+
+.line {
+    height: 1px;
+    width: 50%;
+    margin-top: 50px;
+    border-bottom: 1.5px solid #CCC;
+}
+
+.sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pointers-offer {
+    /* background-color: #000; */
+    height: 15px;
+    width: 15px;
+    margin: auto 5px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pointers-offer:hover {
+    background-color: #b28756;
+    /* border: 2px solid ; */
+}
+
+.sliders-pointers .pointers-offer.active {
+    background-color: #b28756;
+}
+
+.some-facts-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #999;
+    box-shadow: #999;
+    color: #FFF;
+    margin: auto;
+    width: 1140px;
+    width: 100%;
+}
+
+.some-facts-body h1,
+p {
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.some-facts-info {
+    width: 1140px;
+    max-width: 100%;
+}
+
+.title-fact-info {
+    color: #b28756;
+}
+
+.some-facts-infos-body {
+    margin-top: 30px;
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.some-facts-info .line-fact-info {
+    background-color: #fff;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    width: 20px;
+}
+
+.dark-info {
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+    color: #9997;
+}
+
+/* SHARE ABOUT US */
+
+.tell-about-body {
+    /* background-color: red; */
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2280px;
+    max-width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0.5px 2px #999;
+    margin-bottom: 0;
+}
+
+.tell-about-body .cont-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+}
+
+.cont-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-share figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-share .main-share {
+    margin: 50px;
+}
+
+.cont-share .main-share figcaption {
+    margin-left: 15px;
+    color: #D8D8D8;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cont-share .second-share figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.cont-share .second-share {
+    display: flex;
+    /* margin: 5px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-share .second-share img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+/* FORM CONTACT us */
+
+.contacts-body {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.cont-form {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+form fieldset {
+    border: none;
+}
+
+fieldset legend,
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin: auto;
+}
+
+fieldset legend {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+fieldset h2 {
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+form .form-padrao [type=text],
+[type=email] {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px;
+    margin: 15px;
+    border-style: none;
+    border-bottom: 2px solid #BABABA;
+}
+
+.campo-inferior input{
+    width: 94%;
+}
+
+.button.center {
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto 0 auto;
+    width: 100%;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAP */
+.section-map-area {
+    background-image: url(../assets/images/Captura\ de\ tela\ 2025-11-03\ 032127.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    padding: 30px 0;
+}
+
+.section-map-area-area {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.section-map-info {
+    width: 32%;
+    padding: 30px;
+    background-color: #FFF;
+    color: #000;
+    margin-left: 5%;
+}
+
+.section-map-info-item {
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.section-map-info-item img {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.section-map-info-item-img img {
+    width: 25px;
+    height: auto;
+}
+
+.section-map-info-item-img.location img {
+    width: 25px;
+    height: 25px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-cont{
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    margin: auto;
+    width: 100%;
+    width: 1140px;
+    padding: 25px;
+}
+
+.footer-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-social {
+    display: flex;
+}
+
+.img-social img{
+    display: inline-block;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 4px;
+    background-color: #555;
+}
+
+.img-social img:hover {
+    background-color: #b28756;
+
+}
+
+.web {
+    margin-top: 80px;
+}
+
+.footer-desc {
+    width: 320px;
+    font-size: 11px;
+    color: #999;
+}
+
+.footer-desc p {
+    text-align: left;
+}
+
+.form-footer {
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-footer [type=email],
+.form-footer ::placeholder {
+    text-align: center;
+    color: #999;
+}
