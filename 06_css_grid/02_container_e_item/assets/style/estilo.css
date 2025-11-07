@@ -247,12 +247,13 @@ img {
 @media (min-width: 1201px) {
     body {
         background-color: rgba(0, 0, 255, 0.388);
-        max-width: 750px;
+        max-width: 1320px;
         margin: 20px auto;
     }
 
     #main {
         background-color: aqua;
+        padding: 40px;
     }
 }
 
