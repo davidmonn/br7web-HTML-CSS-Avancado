@@ -1,0 +1,343 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Var*/
+:root {
+    --bd-color: rgba(0, 0, 255, 0.388);
+    --main-color: aqua;
+    --h-color: rgba(0, 0, 255, 0.521);
+    --font-p: 17px;
+}
+
+body {
+    background-color: var(--bd-color);
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+p {
+    font-size: var(--font-p);
+}
+
+#main {
+    background-color: var(--main-color);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comentarios {
+    background-color: rgba(255, 255, 255, 0.788);
+    margin: 100px 0;
+    padding: 25px;
+    border-radius: 5%;
+}
+
+title,
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--h-color);
+    margin: 30px auto;
+}
+
+h3 {
+    text-align: justify;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+p {
+    font-size: 18px;
+    margin: 20px auto;
+    text-indent: 25px;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-left: 25px
+}
+
+ul li {
+    margin-top: 15px;
+}
+
+/*Cont-video para escolhermos o tamanho que iremos querer*/
+#cont-video {
+    width: 100%px;
+}
+
+/* video-area define a proporção do vídeo (ex: 16:9 = 56.25%) */
+#video-area {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 9/16 = 0.5625 → para proporção 16:9 */
+    /*background-color: #000; Fundo preto para testar se ocupa todo espacamento necessario */
+}
+
+/* iframe ocupa toda a área criada pela proporção do container */
+#video-area iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+#next {
+    /* margin: 0px 250px; */
+    display: block;
+    text-align: right;
+}
+
+.red {
+    color: red;
+}
+
+label {
+    display: block;
+    margin: 20px auto;
+}
+
+input[type=text],[type=email],[type=password], textarea, select{
+    display: block;
+    padding: 5px;
+    width: 350px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    outline: 0;
+    margin: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.termoslink {
+    color: #000;
+    text-decoration: none;
+}
+
+.termoslink:hover{
+    text-decoration: underline;
+}
+
+[type=submit] {
+    background-color: #EEE;
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #CCC;
+}
+
+[type=submit]:hover {
+    background-color:rgba(0, 0, 255, 0.091);
+    transition: 0.5s;
+    border: 2px solid rgba(0, 0, 255, 0.091);
+}
+
+#cont-form {
+    background-color: #cccccc9e;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+fieldset {
+    background-color: #eeeeeea1;
+    margin: 25px 0px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 255, 0.521);
+    border-radius: 15px;
+}
+
+legend {
+    color: rgba(0, 0, 255, 0.521);
+    font-weight: bold;
+    padding: 5px;
+}
+
+.boxPai {
+    font-size: 20px;
+}
+
+.boxPai h1 {
+    font-size: inherit;
+}
+
+li {
+    margin-bottom: 15px 0px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.teste-min-max {
+    width: max(100%, 20%);
+    /* width: min(50%, 200px) */
+}
+
+/* Responsividade */
+
+/* Telas muito pequenas (200px até 720px) */
+@media (min-width: 200px) and (max-width: 720px) {
+    :root {
+        --font-smll: 14px;
+    }
+
+    body {
+        background-color: rgb(133, 0, 0);
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    #main {
+        background-color: rgb(255, 255, 255);
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+}
+
+/* Telas médias (721px até 1200px) */
+@media (min-width: 721px) and (max-width: 1200px) {
+    body {
+        background-color: rgba(0, 0, 0, 0.388);
+        max-width: 720px;
+        margin: 20px auto;
+    }
+
+    #main {
+        background-color: aqua;
+    }
+}
+
+/* Telas grandes (acima de 1200px) */
+@media (min-width: 1201px) {
+    body {
+        background-color: rgba(0, 0, 255, 0.388);
+        max-width: 750px;
+        margin: 20px auto;
+    }
+
+    #main {
+        background-color: aqua;
+    }
+}
+
+#cont-pai {
+    display: flex;
+    flex-direction: column;
+}
+
+#caixa1,
+#caixa2,
+#caixa3,
+#caixa4 {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 5px 0px;
+}
+
+
+/* @media orientation */
+@media (orientation: landscape) /*landscape: o lado predominante e horizontal*/ {
+
+    #caixa1,
+    #caixa2,
+    #caixa3,
+    #caixa4 {
+        margin: 0px 5px;
+}
+
+    #cont-pai {
+        flex-direction: row;
+    }
+
+}
+
+@media (orientation: portrait) /*portrait: laddo predominante vertical*/ {
+
+    #caixa1,
+    #caixa2,
+    #caixa3,
+    #caixa4 {
+        margin: 5px 0px;
+}
+
+    #cont-pai {
+        flex-direction: column;
+    }
+
+}
+
+.calc {
+    width: calc(100% - 30px);
+    height:200px;
+    background-color: #CCC;
+}
+
+
+a[href^="http:"] {
+    background-color: bisque;
+}
+
+a[href^="https:"] {
+    background-color: #CCC;
+}
+
+a[href*="brasil"] {
+    background-color: chartreuse;
+}
+
+a[href*="tecnologia"] {
+    background-color: rgba(5, 89, 89, 0.535);
+}
+
+input, a {
+    display: block; /* Para ficar cada um em sua linha */
+}
+
+[required] {
+    background-color: rgba(98, 255, 0, 0.525);
+}
+
+input[name="nome"] {
+    background-color: red;
+}
+
+a[href$="teste"] {
+    background-color: rgb(108, 141, 141);
+}
