@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Gaps</title>
+    <link rel="stylesheet" href="../03_trabalhando_c_gaps/assets/style/estilo.css">
+</head>
+<body>
+
+    <div id="main">
+
+        <a href="../../06_css_grid/02_container_e_item/index.html">Modulo anterior - Container e Item </a>
+
+        <h1 id="title">Modulo - Trabalhando com Gaps</h1>
+        <h2>Aula 01 - Oque é Grid</h2>
+
+        <section>
+            
+            <h3>Intro</h3>
+            <p>
+                Conceito de <strong>gap</strong> e a parte da separacao entre um item e outro, quando criamos um <strong>Grid</strong> temos basicamente divisoes imaginaria, entre um item e outro. E quando usamos a propriedade <strong>gap</strong> estamos definindo o espaco dessa divisao.
+            </p>
+
+            <div class="code">
+
+                <h3>Temos diferentes tipos de Gaps</h3>
+                <p>
+                    Podemos definir <strong>gaps</strong> apenas para colunas e para linhas.
+                </p>
+
+                <h3>Como usar:</h3>
+                <p>
+                    Se quisermos dar espacamento entre uma coluna e outrar podemos fazer da seguinte forma em nosso <strong>container pai</strong>:
+                </p>
+
+                <p>
+                    <strong>Para coluna:</strong> <br>
+                    grid-column-gap: 10px;
+                </p>
+
+                <p>
+                    <strong>Para linhas:</strong> <br>
+                    grid-row-gap: 10px;
+                </p>
+
+                <h3>Podemos tambem usar uma forma abreviada:</h3>
+                <p>
+                    <strong>grid-gap</strong> com ele conseguimos colocar as duas propriedades. Ex: <br>
+                    <strong>grid-gap: 10px 10px;</strong> <br>
+                    O primeiro valor sera a <strong>linha</strong> e o segundo a <strong>coluna</strong> <br> <br>
+                    Ou tambem podemos usar apenas 10px ai ficara 10 para linha e 10 para coluna.
+                </p>
+
+                <p>
+                    <strong>Obs:</strong> O prefixo de usar o <strong>grid</strong> dessa forma esta meio obsoleto, agora e mais comumente usado apenas <strong>gap</strong> e nao mais <strong>grid-gap</strong>, porem nem todas as versoes de navegadores ainda possuem essa compatibilidade.
+                </p>
+
+            </div>
+
+        </section>
+        
+        <div class="ex">
+
+            <div class="container">
+
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+
+            </div>
+
+        </div>
+
+    <a href="../04_colunas_e_linhas/" id="next">Proxima aula - CSS Grid - Colunas e Linhas</a>
+
+    </div>
+
+    
+</body>
+</html>
