@@ -10,7 +10,7 @@
 
     <div id="main">
 
-        <a href="../../06_css_grid/02_container_e_item/assets/style/estilo.css">Modulo anterior - Oque e CSS Grid </a>
+        <a href="../../06_css_grid/01_oque_e_grid/index.html">Modulo anterior - Oque e CSS Grid </a>
 
         <h1 id="title">Modulo - Container e Item</h1>
         <h2>Aula 01 - Oque é Grid</h2>
@@ -19,11 +19,65 @@
             
             <h3>Intro</h3>
             <p>
-                
+                Iremos comecar pelos dois maiores conceitos de CSS Grid que sao: <strong>container</strong> e <strong>item</strong>.
+            </p>
+
+            <h3>Como funciona:</h3>
+
+            <p>
+                Para fazermos qualquer tipo de estrutura grid, iremos ter que ter pelo menos <strong>duas divs</strong> ou <strong>elemento</strong>.
+            </p>
+            
+            <h3>Como usar Grid</h3>
+            <p>
+                Parra comecarmos a usar o grid, iremos criar 7 divs, onde uma sera o container pai e as outras 6 dentro dela. Para usarmos o grid e simples, basta usarmos o CSS com a propriedade, <strong>displau: grid;</strong>, temos diversas formas de estar montando nossas colunas, algumas propriedades iremos definir no container pai e outras serao necessarias serem definidas no proprio item.
+            </p>
+            <p>
+                Regras no geral que se aplicam a todos os elementos podem ser usadas no container pai, e regras especificas para um determinado elemento, pode ser feito no item especifico.
             </p>
 
         </section>
+        
+        <div class="ex">
 
+            <div class="container">
+
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+
+            </div>
+
+        </div>
+
+        <div class="cod">
+            <h3>Exemplo doque foi usado no codigo acima:</h3>
+            <p>
+
+                <strong>.container</strong> { <br>
+                    display: grid; <br>
+                    grid-template-columns: repeat(3, 1fr); <br>
+                } <br> <br>
+
+                <strong>.item:first-child</strong> { <br>
+                    background-color: red; <br>
+                    border-radius: 10px; <br>
+                    padding: 20px; <br>
+                } <br> <br>
+
+                <strong>.item</strong> { <br>
+                    background-color: #CCC; <br>
+                    border-radius: 10px; <br>
+                    padding: 20px; <br>
+                    margin: 2px; <br>
+                }
+
+            </p>
+        </div>
 
 
     <a href="../03" id="next">Proxima aula - CSS Grid - </a>
