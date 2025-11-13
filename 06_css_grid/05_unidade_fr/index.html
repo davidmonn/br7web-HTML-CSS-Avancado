@@ -3,90 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colunas e Linhas</title>
-    <link rel="stylesheet" href="../04_colunas_e_linhas/assets/style/estilo.css">
+    <title>Unidade FR</title>
+    <link rel="stylesheet" href="../05_unidade_fr/assets/style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../06_css_grid/02_container_e_item/index.html">Modulo anterior - Trabalhando com Gaps </a>
+        <a href="../../06_css_grid/04_colunas_e_linhas/index.html">Modulo anterior - Colunas e Linhas </a>
 
-        <h1 id="title">Modulo - Colunas e Linhas</h1>
+        <h1 id="title">Modulo - Unidade FR</h1>
         <h2></h2>
 
         <section>
             
             <h3>Intro</h3>
             <p>
-                Iremos nos aprofundar mais na utilizacao de <strong>colunas</strong> e <strong>linhas</strong>
+                A unidade <strong>FR</strong> foi criada justamente para uso com o <strong>grid</strong>, e representa uma <strong>fracao</strong> do espaco disponivel do <strong>grid</strong>. Ou seja quando usamos <strong>1fr</strong> estamos usando uma unidade que e totalmente <strong>flexivel</strong>. <br>
+                Esse tamanho tem uma variacao que vai de acordo com a <strong>width</strong> de nosso grid. Quando usamos por exemplo <strong>2fr</strong> ele sera o <strong>dobro</strong> do <strong>1fr</strong>.
             </p>
 
-            <div class="code">
-
-                <h3>grid-template-coluns:</h3>
-                <p>
-                    <strong>grid-template-coluns:</strong> com ele definimos quantas colunas iram ter em nosso grid, geralmente, definimos um grid por sua quantidade de colunas. Temos algumas formas de passar seu valor sendo cada valor adicionado sera tamanho das colunas em pxs e se for adicionado mais valores, seram novas colunas. Ex:
-                </p>
-
-                <div class="code">
-                    <p>
-                        Ex) <strong>grid-template-coluns: 10px 10px 10px;</strong> nesse caso temos 3 colunas de 10pxs
-                    </p>
-
-                    <p>
-                        Obs: oque aplicarmos em uma coluna como um valor diferente, sera aplicado nas demais colunas daquela fileira, funciona como uma tabela.
-                    </p>
-                    <h3>Ex - grid-template-coluns:</h3>
-                    <div class="ex">
-
-                        <div class="cont-col">
-                            
-                            <div class="grid-col">1</div>
-                            <div class="grid-col">2</div>
-                            <div class="grid-col">3</div>
-                            <div class="grid-col">4</div>
-                            <div class="grid-col">5</div>
-
-                        </div>
-
-                        <p>
-                            Ficou da seguinte forma esse nosso <strong>grid:</strong> <br> <br>
-                            <strong>.cont-col</strong> { <br>
-                            /* background-color: #0000004d; */ <br>
-                            display: grid; <br>
-                            gap: 50px 50px; <br>
-                            grid-template-columns: 100px 100px 100px 100px auto; <br>
-                            }
-                        </p>
-
-                        
-
-                    </div>
-
-                    <h3>grid-template-rows:</h3>
-                    <p>
-                        Com <strong>grid-template-rows</strong> podemos fazer basicamente a mesma coisa, porem com linhas e um pouco menos de controle, ja que nao saberemos quantas linhas teremos. Por conta disso definimos um <strong>grid</strong> por suas colunas que e mais facil definirr e com isso adaptamos de acordo com as linhas.
-                    </p>
-                    <h3>Ex) grid-template-rows:</h3>
-
-                    <div class="cont-grid-row">
-                        <div class="grid-row">1</div>
-                        <div class="grid-row">2</div>
-                        <div class="grid-row">3</div>
-                        <div class="grid-row">4</div>
-                        <div class="grid-row">5</div>
-                    </div>
-
-                </div>
+            <div class="cont-und-fr">
                 
+                <div class="ex-und-fr">1</div>
+                <div class="ex-und-fr">2</div>
+                <div class="ex-und-fr">3</div>
+                <div class="ex-und-fr">4</div>
+                <div class="ex-und-fr">5</div>
+                <div class="ex-und-fr">6</div>
+                <div class="ex-und-fr">7</div>
+                <div class="ex-und-fr">8</div>
+                <div class="ex-und-fr">9</div>
+                <div class="ex-und-fr">10</div>
 
             </div>
+
+            <p>
+                <strong>Obs</strong>: muito util pois se torna responsivo.
+            </p>
 
         </section>
         
 
-    <a href="../04_colunas_e_linhas/" id="next">Proxima aula - CSS Grid - Colunas e Linhas</a>
+    <a href="../06_usando_o_repeat/index.html" id="next">Proxima aula - CSS Grid - Usando o Repeat</a>
 
     </div>
 
