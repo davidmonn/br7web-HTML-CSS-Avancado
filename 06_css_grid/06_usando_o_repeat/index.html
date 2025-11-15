@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando o Repeat</title>
-    <link rel="stylesheet" href="../05_unidade_fr/assets/style/estilo.css">
+    <link rel="stylesheet" href="../06_usando_o_repeat/assets/style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../0">Modulo anterior -  </a>
+        <a href="../../06_css_grid/05_unidade_fr/index.html">Modulo anterior - Unidade Fr</a>
 
         <h1 id="title">Modulo - Usando o Repeat</h1>
 
@@ -18,15 +18,98 @@
             
             <h3>Intro</h3>
             <p>
-                
+                O repeat é uma função usada no CSS Grid para repetir automaticamente um mesmo padrão de tamanho em várias colunas ou linhas.
+                Ele evita que você escreva o mesmo valor várias vezes e deixa o código mais limpo e organizado.
+            </p>
+            <p>
+                Com o repeat, você diz quantas vezes algo deve se repetir e qual é o tamanho que será repetido.
+            </p>
+            <p>
+                Isso ajuda principalmente quando o layout possui muitas colunas ou linhas iguais.
+            </p>
+            <p>
+                O objetivo principal do repeat é simplificar a criação de grids, tornar o código mais fácil de manter e ajustar, e permitir que o layout seja alterado mais rapidamente.
+            </p>
+            <p>
+                Também existem formas automáticas do repeat, como auto-fill e auto-fit, que permitem que o navegador crie quantas colunas couberem na tela, deixando o grid mais responsivo sem precisar calcular nada manualmente.
             </p>
 
+            <h3>Resumindo:</h3>
+            <p>
+                Quando usamos <strong>grid-template-columns</strong> ou <strong>grid-template-rows</strong>, ao inves de usarmos valores numericos podemos usar o <strong>repeat()</strong> normalmente usado dois valores nele, mas pode conter mais. O primeiro valor <strong>quantida de repeticoes</strong> segundo valor = <strong>oque ele ira repetir</strong>
+            </p>
+
+            <div class="cont-repeat">
+
+                <div class="exp-repeat">1</div>
+                <div class="exp-repeat">2</div>
+                <div class="exp-repeat">3</div>
+                <div class="exp-repeat">4</div>
+                <div class="exp-repeat">5</div>
+                <div class="exp-repeat">6</div>
+                <div class="exp-repeat">7</div>
+                <div class="exp-repeat">8</div>
+                <div class="exp-repeat">9</div>
+
+            </div>
+
+            <h3>Explicacao do codigo:</h3>
+                <p>
+                    O codigo parar ser feito esse grid ficou da seguinte forma:
+                </p>
+                <p>
+                    <strong>.cont-repeat</strong> { <br>
+                    display: grid; <br>
+                    <strong>grid-template-columns: repeat(3, 1fr); /* e o mesmo de 1fr 1fr 1fr */</strong> <br>
+                    <strong>grid-template-rows: repeat(1, 50px); /* o mesmo de 1 50px */</strong> <br>
+                    }
+                </p>
+
+                <h3>Outra forma de usar repeat</h3>
+                <p>
+                    Podemos alem da forma que fizemos, se quisermos por exemplo adicionarmos mais uma coluna com um tamanho diferente, podemos fazer da seguinte forma:
+                </p>
+
+                <div class="cont-repeat2">
+
+                <div class="exp-repeat two">1</div>
+                <div class="exp-repeat two">2</div>
+                <div class="exp-repeat two">3</div>
+                <div class="exp-repeat two">4</div>
+                <div class="exp-repeat two">5</div>
+                <div class="exp-repeat two">6</div>
+                <div class="exp-repeat two">7</div>
+                <div class="exp-repeat two">8</div>
+                <div class="exp-repeat two">9</div>
+
+            </div>
+
+            <h3>Ficando da seguinte forma nosso codigo:</h3>
+            <p>
+                <strong>.cont-repeat2</strong> {
+                display: grid;
+                <strong>grid-template-columns: 200px repeat(3, 1fr) 600px;</strong> /* e o mesmo de 200px 1fr 1fr 1fr 600px*/
+                grid-template-rows: repeat(1, 50px); /* o mesmo de 1 50px */
+                }
+            </p>
+
+            <p>
+                <strong>Obs:</strong> como podemos observar, apenas adicionamos mais um valor fora do <strong>repeat</strong>. o valor pode ser tanto antes do repeat quando depois.
+            </p>
+
+            <h3>auto-fill</h3>
+            <p>
+                O <strong>auto-fill</strong> é um valor que pode ser usado dentro do repeat no CSS Grid. Ele faz com que o navegador crie automaticamente o maior número possível de colunas com o tamanho que você escolheu.
+            </p>
+            <p>
+                Isso significa que ele vai preencher toda a largura disponível da tela (ou do container) criando várias colunas iguais, sempre repetindo o tamanho definido. Ele continua criando novas colunas até não caber mais nenhuma dentro do espaço disponível. O resultado é um grid que se ajusta sozinho conforme o tamanho da tela do usuário, mantendo sempre colunas do mesmo tamanho.
+            </p>
 
 
         </section>
         
 
-    <a href="../0" id="next">Proxima aula - CSS Grid - </a>
+    <a href="../07_usando_minmax/index.html" id="next">Proxima aula - CSS Grid - Usando minmax</a>
 
     </div>
 
