@@ -456,3 +456,29 @@ a[href$="teste"] {
     align-items: center;
     padding: 2px;
 }
+
+/* MINMAX */
+.ex-cont-minmax {
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px 230px;
+    /* grid-template-rows: 1fr 2fr 1fr; */
+    /* Outro metodo para rows */
+    grid-auto-rows: 30px 30px minmax(30px, auto);
+    grid-gap: 10px;
+}
+
+.ex-minmax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ex-minmax:nth-of-type(even) {
+    background-color: ghostwhite;
+}
+
+.ex-minmax:nth-of-type(odd) {
+    background-color: thistle;
+}

@@ -18,8 +18,41 @@
             
             <h3>Intro</h3>
             <p>
-                
+                Usada basicamente para fazer um calculo para definir o valor minimo e maximo de alguma propriedade que iremos usar.
             </p>
+            <p>
+                Podemos usar o <strong>minmax</strong> de varias formas diferentes, como exemplo temos uma propriedade que consegumos definir a altura padrao de todas as linhas, nao apenas de uma linha especifica como com <strong>grid-template-rows</strong>. Podemos usar a propriedade <strong>grid-auto-rows</strong>, com ela conseguimos definir um valor para todas as linhas sem termos problemas com o scroll de rolagem se fizessemos isso com o <strong>grid-template-rows</strong>.
+            </p>
+
+            <div class="ex-cont-minmax">
+
+                <div class="ex-minmax">1</div>
+                <div class="ex-minmax">2</div>
+                <div class="ex-minmax">3</div>
+                <div class="ex-minmax">4</div>
+                <div class="ex-minmax">5 <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolores eaque ratione, repellendus reiciendis quod</div>
+                <div class="ex-minmax">6</div>
+                <div class="ex-minmax">7</div>
+                <div class="ex-minmax">8</div>
+                <div class="ex-minmax">9</div>
+                <div class="ex-minmax">10</div>
+                <div class="ex-minmax">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero adipisci exercitationem reiciendis perspiciatis suscipit architecto beatae nobis, nulla sapiente velit porro quas odio reprehenderit totam consequatur ut aperiam ad illum.</div>
+                <div class="ex-minmax">12</div>
+
+            </div>
+
+            <p>
+                Podemos obersevar que na quinta fileira houve uma quebra, isso pois usamos um valor fixo. Podemos corrigir esse problema usando a propriedade <strong>minmax</strong> para definir um valor minimo e maximo.
+            </p>
+
+            <p>
+                Agora podemos observar que ja na div 11, com o uso de minmax, conseguimos evitar a quebra da div, por o conteudo estar muito grande
+            </p>
+
+            <h3>Ex do codigo usado:</h3>
+            <picture>
+                <img src="assets/img/Captura de tela 2025-11-15 042532.png" alt="Exemplo">
+            </picture>
 
         </section>
         
