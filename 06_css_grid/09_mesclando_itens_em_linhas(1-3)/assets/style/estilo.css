@@ -512,3 +512,49 @@ a[href$="teste"] {
     background-color: darkturquoise;
 }
 
+/* MESCLANDO ITENS (1/3) */
+.cont-mesc-ex {
+    background-color: seashell;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 5px;
+    padding: 15px;
+}
+
+.mesc-ex {
+    display: flex;
+    padding: 5px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mesc-ex:nth-of-type(even) {
+    background-color: rgba(70, 131, 180, 0.476);
+}
+
+.mesc-ex:nth-of-type(odd) {
+    background-color: rgba(0, 139, 139, 0.728);
+}
+
+.mesc-ex.ex1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.mesc-ex.ex4 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.mesc-ex.ex12 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.mesc-ex.ex11 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
