@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesclando Itens em Linhas (2/3)</title>
-    <link rel="stylesheet" href="../10_mesclando_itens_em_linhas(2-3)/assets/style/estilo.css">
+    <title>Mesclando Itens em Linhas (3/3)</title>
+    <link rel="stylesheet" href="../11_mesclando_itens_em_linhas(3-3)/assets/style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../../06_css_grid/09_mesclando_itens_em_linhas(1-3)/index.html">Modulo anterior - Mesclando Itens em Linhas (1/3)</a>
+        <a href="../../06_css_grid/">Modulo anterior - </a>
 
-        <h1 id="title">Modulo - Mesclando Itens em Linhas (2/3)</h1>
+        <h1 id="title">Modulo - Mesclando Itens em Linhas (3/3)</h1>
 
         <section>
             
             <h3>Intro</h3>
             <p>
-                Apenas mais alguns testes de pratica
+                Nessa aula iremos dar uma simplificada para conseguir fazermos as mudancas nas linhas.
             </p>
 
             <h3>Grid de Exemplo:</h3>
 
             <div class="cont-mesc-ex">
 
-                <div class="mesc-ex ex1">1 - grid-column-start</div>
+                <div class="mesc-ex ex1">1</div>
                 <div class="mesc-ex ex2">2</div>
                 <div class="mesc-ex ex3">3</div>
                 <div class="mesc-ex ex4">4</div>
@@ -42,23 +42,21 @@
 
             <h3>Podemos usar alguns atributos em nossos elementos especificos:</h3>
             <p>
-                <strong>grid-column-start</strong> com isso dizemos onde a coluna desse elemento ira comecar.
+                <strong>grid-column:</strong> com apenas o <strong>grid-column</strong> conseguimos definir o valor ja tanto de inicio (start) quanto fim (end), ex: <strong>grid-column: 1/3;</strong>
             </p>
             <p>
-                <strong>grid-columns-end:</strong> onde irra terminar a coluna.
+                <strong>grid-row:</strong> conseguimos definir o valor ja tanto de inicio (start) quanto fim (end), ex: <strong>grid-row: 1/3;</strong>
             </p>
+
             <p>
-                <strong>grid-row-start:</strong> em qual linha ira comecar.
-            </p>
-            <p>
-                <strong>grid-row-end:</strong> onde ira terminar a linha.
+                <strong>span:</strong> com ele basicamente ao inves de irmos ate a linha imaginaria 2, ele ira ate o fim do item escolhido por sua coluna ou seja, volta um numero. Ex de uso <strong>grid-column: 1/span 3;</strong>
             </p>
             
 
         </section>
         
 
-    <a href="../11_mesclando_itens_em_linhas(3-3)/index.html" id="next">Proxima aula - CSS Grid - Meslcando Itens em Linhas (3/3)</a>
+    <a href="../" id="next">Proxima aula - CSS Grid - </a>
 
     </div>
 
