@@ -348,41 +348,41 @@ a[href$="teste"] {
     left: 4%;
 }
 
-/* Grid Template Area */
-.cont-tem-area {
+/* Grid Area */
+.cont-grid-area {
     display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 
-    "item1 item1 item2 item3"
-    "item1 item1 item2 item4"
-    ;
+    padding:5px;
+    background-color: whitesmoke;
+    gap: 7px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
 }
 
-.tArea1 {
-    grid-area: item1;
-}
-
-.tArea2 {
-    grid-area: item2;
-}
-
-.tArea3 {
-    grid-area: item3;
-}
-
-.tArea4 {
-    grid-area: item4;
-}
-
-.cont-tem-area > * {
+.grid-area {
+    border-radius: 8px;
     padding: 8px;
 }
 
-
-.cont-tem-area > *:nth-child(even) {
-    background-color: khaki;
+.grid-area:nth-of-type(odd) {
+    background-color: tan;
 }
 
-.cont-tem-area > *:nth-child(odd) {
-    background-color: indianred;
+.grid-area:nth-of-type(even) {
+    background-color: teal;
+}
+
+.grid-area.ex1 {
+    background-color: red;
+    /*
+    ORDEM GRID-AREA
+    1. grid-row-start
+    2. grid-column-start
+    3. grid-row-end
+    4. grid-column-end 
+    */
+    grid-area: 1 / 1 / span 3 / span 2;
+}
+
+.grid-area.ex6 {
+    grid-area: 4 / 3 / 6 / 2;
 }
